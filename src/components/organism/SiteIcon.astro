@@ -3,15 +3,20 @@ import MazreanIcon from "@components/molecule/MazreanIcon.astro";
 import Logo from "@components/molecule/Logo.astro";
 ---
 
-<div class="icon">
-  <MazreanIcon size="50px" />
+<div class="site-icon">
+  <MazreanIcon class="icon" size="50px" />
   <Logo />
 </div>
 
 <style>
-  .icon {
+  @media screen and (max-width: 425px) {
+    .icon {
+      display: none;
+    }
+  }
+  .site-icon {
     display: inline-flex;
     align-items: center;
-    gap: 0 10px;
+    gap: 0 0.4rem;
   }
 </style>
