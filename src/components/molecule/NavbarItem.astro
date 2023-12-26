@@ -1,0 +1,48 @@
+---
+interface Props {
+  name: string;
+  link: string;
+  underline: boolean;
+}
+
+const { name, link, underline } = Astro.props;
+---
+
+<li class={underline ? "underline" : ""}>
+  <a href={link}>{name}</a>
+</li>
+
+<style>
+  a {
+    color: var(--text);
+    text-decoration: none;
+  }
+  li {
+    position: relative;
+    margin: 0;
+  }
+  li:not(.underline)::after {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: var(--accent);
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: transform 0.3s;
+  }
+  li:not(.underline):hover::after {
+    transform: scale(1, 1);
+  }
+  .underline::after {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: var(--accent);
+  }
+</style>

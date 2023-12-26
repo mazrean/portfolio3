@@ -1,0 +1,16 @@
+---
+interface Props {
+  size: string;
+}
+
+const { size }: Props = Astro.props;
+---
+
+<img src="/public/mazrean.svg" alt="Mazrean's Icon" />
+
+<style define:vars={{ size }}>
+  img {
+    width: var(--size);
+    aspect-ratio: 1/1;
+  }
+</style>
