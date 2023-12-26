@@ -1,0 +1,41 @@
+---
+import SiteIcon from "@components/organism/SiteIcon.astro";
+import Navbar from "@components/organism/Navbar.astro";
+
+const navItems = [
+  {
+    name: "Home",
+    href: "/",
+  },
+  {
+    name: "Achievement",
+    href: "/achievement",
+  },
+  {
+    name: "Blog",
+    href: "/blog",
+  },
+];
+
+interface Props {
+  location: string;
+}
+
+const { location } = Astro.props;
+---
+
+<div class="header">
+  <SiteIcon />
+  <Navbar items={navItems} location={location} />
+</div>
+
+<style>
+  .header {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 20px;
+  }
+</style>
