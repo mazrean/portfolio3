@@ -21,7 +21,7 @@ const { location, title } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/mazrean.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <title>{title ? title + "|" : title}Mazrean's Portfolio</title>
   </head>
   <body>
     <header>
@@ -34,7 +34,12 @@ const { location, title } = Astro.props;
   @import "../styles/reset.css";
   body {
     margin: 0;
-    width: 100vmax;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 0.4rem;
   }
 
   :root {
@@ -47,6 +52,11 @@ const { location, title } = Astro.props;
     font-size: 24px;
     background: var(--background);
     color: var(--text);
+  }
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 16px;
+    }
   }
   code {
     font-family:

@@ -1,12 +1,18 @@
 ---
 interface Props {
+  class?: string;
   size: string;
 }
 
-const { size }: Props = Astro.props;
+const { class: className, size, ...rest } = Astro.props;
 ---
 
-<img src="/public/mazrean.svg" alt="Mazrean's Icon" />
+<img
+  class={className ? className : ""}
+  src="/public/mazrean.svg"
+  alt="Mazrean's Icon"
+  {...rest}
+/>
 
 <style define:vars={{ size }}>
   img {
