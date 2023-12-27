@@ -1,0 +1,31 @@
+---
+import SkillCard from "@components/organism/SkillCard.astro";
+import Subtitle from "@components/organism/Subtitle.astro";
+---
+
+<div class="container">
+  <Subtitle title="Skill" />
+  <div class="skills">
+    <SkillCard name="Go" icon="devicon:go" type="Language" level={3} />
+    <SkillCard name="Go" icon="devicon:go" type="Language" level={5} />
+  </div>
+</div>
+
+<style>
+  .container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    width: 100%;
+  }
+  .skills {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+    gap: 5px;
+  }
+</style>

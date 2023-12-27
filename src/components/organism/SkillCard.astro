@@ -1,0 +1,46 @@
+---
+import Badge from "@components/molecule/Badge.astro";
+import Icon from "@components/molecule/Icon.astro";
+import Stars from "@components/molecule/Stars.astro";
+
+interface Props {
+  name: string;
+  icon: string;
+  type: string;
+  level: number;
+}
+
+const { name, icon, type, level } = Astro.props;
+---
+
+<div class="container">
+  <Icon name={icon} size="4em" />
+  <div>
+    <h4>{name}</h4>
+    <Badge text={type} />
+    <Stars num={level} max={5} />
+  </div>
+</div>
+
+<style>
+  .container {
+    display: inline-flex;
+    min-width: 250px;
+    max-width: 350px;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid var(--text);
+    padding: 10px;
+    font-size: 24px;
+  }
+  h4 {
+    margin: 0;
+    font-size: 1.25em;
+  }
+  p {
+    margin: 0;
+  }
+</style>
