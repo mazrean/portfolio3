@@ -2,15 +2,16 @@
 interface Props {
   class?: string;
   size: string;
+  name: string;
 }
 
-const { class: className, size, ...rest } = Astro.props;
+const { class: className, size, name, ...rest } = Astro.props;
 ---
 
 <img
   class={className ? className : ""}
-  src="/public/mazrean.svg"
-  alt="Mazrean's Icon"
+  src={`/public/icons/${name}.svg`}
+  alt="{name} icon"
   {...rest}
 />
 
@@ -18,5 +19,6 @@ const { class: className, size, ...rest } = Astro.props;
   img {
     width: var(--size);
     aspect-ratio: 1/1;
+    object-fit: contain;
   }
 </style>
