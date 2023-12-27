@@ -1,0 +1,23 @@
+---
+import Icon from "@components/molecule/Icon.astro";
+interface Props {
+  size: string;
+  maxSize?: string;
+}
+
+const { size, maxSize } = Astro.props;
+---
+
+<div>
+  <Icon name="mazrean" size="100%" />
+</div>
+
+<style define:vars={{ size, maxSize }}>
+  div {
+    width: var(--size);
+    max-width: var(--maxSize);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+</style>

@@ -1,0 +1,84 @@
+---
+import Icon from "@components/molecule/Icon.astro";
+import data from "@contents/about.yaml";
+---
+
+<div class="container">
+  <div class="name">
+    <p>{data.ruby}</p>
+    <h2>{data.name}</h2>
+  </div>
+  <div class="accounts">
+    <a href={data.links.github}>
+      <Icon name="github" size="1.5rem" class="icon" />
+    </a>
+    <a href={data.links.twitter}>
+      <Icon name="twitter" size="1.5rem" class="icon" />
+    </a>
+    <a href={data.links.zenn}>
+      <Icon name="zenn" size="1.5rem" class="icon" />
+    </a>
+  </div>
+  <table>
+    <tr>
+      <th>名前</th>
+      <td>{data.realName}</td>
+    </tr>
+    <tr>
+      <th>所属</th>
+      <td>{data.affiliation}</td>
+    </tr>
+    <tr>
+      <th>職種</th>
+      <td>{data.jobCategory}</td>
+    </tr>
+  </table>
+</div>
+
+<style>
+  .container {
+    display: inline-flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .name {
+    color: var(--accent);
+  }
+  h2 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+
+  .accounts {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.6rem;
+  }
+  .icon {
+    opacity: 0.6;
+    transition: opacity 0.2s ease-in-out;
+  }
+  .icon:hover {
+    opacity: 1;
+  }
+
+  table {
+    margin: 0;
+    border-spacing: 0.2rem;
+  }
+  th {
+    font-weight: 700;
+    color: var(--accent);
+    white-space: nowrap;
+  }
+  td {
+    word-break: keep-all;
+  }
+</style>
