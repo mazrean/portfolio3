@@ -1,27 +1,27 @@
 ---
-import SiteIcon from "@components/organism/SiteIcon.astro";
-import Navbar from "@components/organism/Navbar.astro";
+import SiteIcon from '@components/organism/SiteIcon.astro'
+import Navbar from '@components/organism/Navbar.astro'
 
 const navItems = [
   {
-    name: "Home",
-    href: "/",
+    name: 'Home',
+    href: '/'
   },
   {
-    name: "Achievement",
-    href: "/achievement",
+    name: 'Achievement',
+    href: '/achievement'
   },
   {
-    name: "Blog",
-    href: "/blog",
-  },
-];
+    name: 'Blog',
+    href: '/blog'
+  }
+]
 
 interface Props {
-  location: string;
+  location: string
 }
 
-const { location } = Astro.props;
+const { location } = Astro.props
 ---
 
 <div class="header">
