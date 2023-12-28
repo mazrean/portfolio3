@@ -1,18 +1,18 @@
 ---
 interface Props {
-  num: number;
-  max: number;
+  num: number
+  max: number
 }
 
-const { num, max } = Astro.props;
+const { num, max } = Astro.props
 
 const arr = new Array(max)
   .fill(0)
-  .map((_, i) => `star ${i < num ? "fill" : "empty"}`);
+  .map((_, i) => `star ${i < num ? 'fill' : 'empty'}`)
 ---
 
 <div class="container">
-  {arr.map((classValue) => <div class={classValue} />)}
+  {arr.map(classValue => <div class={classValue} />)}
 </div>
 
 <style>

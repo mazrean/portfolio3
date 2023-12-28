@@ -1,12 +1,12 @@
-declare module "@contents/skill.yaml" {
+declare module '@contents/skill.yaml' {
   const value: {
-    description: string;
+    description: string
     list: {
-      name: string;
-      type: string;
-      icon: string;
-      level: number;
-    }[];
-  };
-  export default value;
+      name: string
+      type: string
+      icon: string
+      level: number
+    }[]
+  }
+  export default value
 }
