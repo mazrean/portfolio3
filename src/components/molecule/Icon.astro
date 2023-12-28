@@ -1,4 +1,6 @@
 ---
+import { getIconSvg } from "@lib/iconify";
+
 interface Props {
   class?: string;
   size: string;
@@ -6,19 +8,17 @@ interface Props {
 }
 
 const { class: className, size, name, ...rest } = Astro.props;
+
+const renderData = await getIconSvg(name);
+renderData.attributes.width = size;
+renderData.attributes.height = size;
+const normalizedBody = renderData.body;
 ---
 
-<img
-  class={className ? className : ""}
-  src={`/public/icons/${name}.svg`}
-  alt="{name} icon"
+<svg
+  {...renderData.attributes}
+  class={className}
+  data-icon={name}
   {...rest}
+  set:html={normalizedBody}
 />
-
-<style define:vars={{ size }}>
-  img {
-    width: var(--size);
-    aspect-ratio: 1/1;
-    object-fit: contain;
-  }
-</style>

@@ -1,0 +1,48 @@
+---
+interface Props {
+  num: number;
+  max: number;
+}
+
+const { num, max } = Astro.props;
+
+const arr = new Array(max)
+  .fill(0)
+  .map((_, i) => `star ${i < num ? "fill" : "empty"}`);
+---
+
+<div class="container">
+  {arr.map((classValue) => <div class={classValue} />)}
+</div>
+
+<style>
+  .container {
+    display: inline-flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .star {
+    width: 1em;
+    height: 1em;
+    clip-path: polygon(
+      50% 5%,
+      61% 40%,
+      98% 40%,
+      68% 62%,
+      79% 96%,
+      50% 75%,
+      21% 96%,
+      32% 62%,
+      2% 40%,
+      39% 40%
+    );
+    position: relative;
+  }
+  .fill {
+    background: #fab005;
+  }
+  .empty {
+    background: var(--text);
+    opacity: 0.3;
+  }
+</style>

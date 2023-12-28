@@ -1,11 +1,13 @@
 ---
 import About from "@components/ecosystem/About.astro";
 import Layout from "../layouts/Layout.astro";
+import Skill from "@components/ecosystem/Skill.astro";
 ---
 
 <Layout title="" location="/">
   <main>
     <About />
+    <Skill />
   </main>
 </Layout>
 
@@ -19,5 +21,6 @@ import Layout from "../layouts/Layout.astro";
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    gap: 1.25rem;
   }
 </style>

@@ -1,0 +1,21 @@
+---
+interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+---
+
+<p>{text}</p>
+
+<style>
+  p {
+    width: fit-content;
+    background-color: var(--accent);
+    color: var(--background);
+    border-radius: 100vh;
+    font-size: 0.5em;
+    padding: 0 7px;
+    margin: 0;
+  }
+</style>

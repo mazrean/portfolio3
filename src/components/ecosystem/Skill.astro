@@ -1,0 +1,46 @@
+---
+import TextBox from "@components/molecule/TextBox.astro";
+import SkillCard from "@components/organism/SkillCard.astro";
+import Subtitle from "@components/organism/Subtitle.astro";
+import skill from "@contents/skill.yaml";
+---
+
+<div class="container">
+  <Subtitle title="Skill" />
+  <TextBox maxWidth="100%">
+    {skill.description}
+  </TextBox>
+  <div class="skills">
+    {
+      skill.list
+        .slice(0, 12)
+        .map((skill) => (
+          <SkillCard
+            name={skill.name}
+            icon={skill.icon}
+            type={skill.type}
+            level={skill.level}
+          />
+        ))
+    }
+  </div>
+</div>
+
+<style>
+  .container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    width: 100%;
+  }
+  .skills {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+    gap: 5px;
+  }
+</style>

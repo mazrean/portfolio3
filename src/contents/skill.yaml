@@ -1,0 +1,69 @@
+description: |
+  サーバーサイド中心に、Webフロントエンド、インフラも触れます。
+  静的解析もできます。
+list:
+  - id: go
+    name: Go
+    type: Language
+    icon: devicon:go
+    level: 5
+  - id: typescript
+    name: TypeScript
+    type: Language
+    icon: devicon:typescript
+    level: 4
+  - id: vue
+    name: Vue.js
+    type: Framework
+    icon: devicon:vuejs
+    level: 3
+  - id: ansible
+    name: Ansible
+    type: IaC
+    icon: devicon:ansible
+    level: 4
+  - id: kubernetes
+    name: Kubernetes
+    type: Platform
+    icon: devicon:kubernetes
+    level: 3
+  - id: terraform
+    name: Terraform
+    type: IaC
+    icon: devicon:terraform
+    level: 3
+  - id: kotlin
+    name: Kotlin
+    type: Language
+    icon: devicon:kotlin
+    level: 3
+  - id: rust
+    name: Rust
+    type: Language
+    icon: devicon:rust
+    level: 2
+  - id: aws
+    name: AWS
+    type: Cloud Computing
+    icon: devicon:amazonwebservices-wordmark
+    level: 2
+  - id: gcp
+    name: GCP
+    type: Cloud Computing
+    icon: devicon:googlecloud
+    level: 2
+  - id: react
+    name: React
+    type: Framework
+    icon: devicon:react
+    level: 2
+  - id: astro
+    name: Astro
+    type: Framework
+    icon: devicon:astro
+    level: 3
+  - id: svelte
+    name: Svelte
+    type: Framework
+    icon: devicon:svelte
+    level: 3
