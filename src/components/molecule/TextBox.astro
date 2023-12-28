@@ -1,0 +1,18 @@
+---
+interface Props {
+  maxWidth: string;
+}
+
+const { maxWidth } = Astro.props;
+---
+
+<p><slot /></p>
+
+<style define:vars={{ maxWidth }}>
+  p {
+    text-align: center;
+    max-width: var(--maxWidth);
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+</style>

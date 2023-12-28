@@ -1,13 +1,28 @@
 ---
+import TextBox from "@components/molecule/TextBox.astro";
 import SkillCard from "@components/organism/SkillCard.astro";
 import Subtitle from "@components/organism/Subtitle.astro";
+import skill from "@contents/skill.yaml";
 ---
 
 <div class="container">
   <Subtitle title="Skill" />
+  <TextBox maxWidth="100%">
+    {skill.description}
+  </TextBox>
   <div class="skills">
-    <SkillCard name="Go" icon="devicon:go" type="Language" level={3} />
-    <SkillCard name="Go" icon="devicon:go" type="Language" level={5} />
+    {
+      skill.list
+        .slice(0, 12)
+        .map((skill) => (
+          <SkillCard
+            name={skill.name}
+            icon={skill.icon}
+            type={skill.type}
+            level={skill.level}
+          />
+        ))
+    }
   </div>
 </div>
 
