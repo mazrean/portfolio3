@@ -1,0 +1,30 @@
+---
+import Subtitle from '@components/organism/Subtitle.astro'
+import * as Description from '@contents/InterestDescription.md'
+---
+
+<div class="container">
+  <Subtitle title="Interest" />
+  <div class="markdown">
+    <Description.Content />
+  </div>
+</div>
+
+<style>
+  .container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    width: 100%;
+  }
+  .markdown {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    max-width: 900px;
+  }
+</style>
