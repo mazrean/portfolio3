@@ -1,3 +1,5 @@
+# 使えるアイコン一覧: https://icon-sets.iconify.design/devicon/
+# ないものが使いたい場合は、/src/iconsへ追加する
 description: |
   サーバーサイド中心に、Webフロントエンド、インフラも触れます。
   静的解析もできます。
