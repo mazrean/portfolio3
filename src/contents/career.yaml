@@ -1,0 +1,37 @@
+- org: 東工大デジタル創作同好会traP
+  period:
+    start: 2019-04
+  description: |
+    部内サービスの開発・運用を行うSysAd班で、ゲームランチャーtraP Collectionのサーバーの開発・運用などを行っていました。
+- org: |
+    株式会社Colorful Palette
+    (株式会社サイバーエージェント)
+  type: Intern, 1 month
+  period:
+    month: 2023-11
+  description: |
+    サーバーサイドエンジニアとしてゲーム開発にかかわっていました。
+- org: ウォンテッドリー株式会社
+  type: Intern, 3 weeks
+  period:
+    month: 2023-08
+  description: |
+    DX SquadでKubernetesの操作を簡単に行うための内製ツールkubeのカナリアリリース機能の拡張を行いました。
+- org: NTT Communications Corporation
+  type: Intern, 2 weeks
+  period:
+    month: 2023-02
+  description: |
+    kubernetesのYAMLの生成やCDパイプラインの構築を行うNTTグループ向けDevOps基盤「Qmonus」の開発に携わりました。
+- org: 株式会社MIXI
+  type: Intern, 1 month
+  period:
+    month: 2021-09
+  description: |
+    SREグループでAWSを利用してのインフラ構築業務の自動化などを行いました。
+- org: ピクシブ株式会社
+  type: Intern, 2 weeks
+  period:
+    month: 2021-03
+  description: |
+    エンタメのための運用型広告pixiv Adsの開発を行いました。

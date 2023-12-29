@@ -1,0 +1,77 @@
+---
+import Subtitle from '@components/organism/Subtitle.astro'
+import career from '@contents/career.yaml'
+---
+
+<div class="container">
+  <Subtitle title="Career" />
+  <div class="table">
+    {
+      career.map((item, index) => (
+        <div class={(index == 0 ? 'first ' : '') + 'row'}>
+          <div class="cell">
+            <p class="info">
+              {item.period.month
+                ? item.period.month
+                : `${item.period.start} ~ ${item.period.end ?? 'now'}`}
+            </p>
+            <p class="org">{item.org}</p>
+            {item.type ? <p class="info">{item.type}</p> : ''}
+          </div>
+          <div class="cell description">{item.description}</div>
+        </div>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  .container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    width: 100%;
+  }
+  .row {
+    border-top: 1px solid var(--text);
+    border-spacing: 1px;
+    padding: 0.8rem 0;
+  }
+  .first {
+    border-top: none;
+  }
+  p {
+    word-break: keep-all;
+    text-align: left;
+    width: fit-content;
+  }
+  .org {
+    font-weight: 700;
+  }
+  .info {
+    font-size: 0.6rem;
+  }
+  .description {
+    text-align: left;
+    font-size: 0.8rem;
+  }
+  @media (min-width: 768px) {
+    .table {
+      display: table;
+      border-collapse: collapse;
+      text-indent: initial;
+    }
+    .row {
+      display: table-row;
+      vertical-align: inherit;
+    }
+    .cell {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 0.8rem 0;
+    }
+  }
+</style>
