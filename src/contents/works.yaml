@@ -48,6 +48,7 @@
     これを防止するコードを生成するツールです。
 - name: portfolio(3代目)
   tags: [ Astro.js, Alpine.js, Cloudflare ]
+  ref: https://mazrean.com
   image: portfolio3
   description: |
     Astro.jsとAlpine.jsを使って作成したブログ機能付きのポートフォリオサイトです。
