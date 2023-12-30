@@ -4,6 +4,7 @@
   description: |
     部内サービスの開発・運用を行うSysAd班で、ゲームランチャーtraP Collectionのサーバーの開発・運用などを行っていました。
 - org: 東京工業大学大学院 情報理工学院 情報工学系
+  type: Student(Master)
   period:
     start: 2023-04
   description: |
@@ -24,6 +25,7 @@
   description: |
     DX SquadでKubernetesの操作を簡単に行うための内製ツールkubeのカナリアリリース機能の拡張を行いました。
 - org: 東京工業大学 情報理工学院 情報工学系
+  type: Student(Bachelor)
   period:
     start: 2019-04
     end: 2023-03
