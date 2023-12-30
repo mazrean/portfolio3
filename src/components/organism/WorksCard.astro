@@ -10,7 +10,7 @@ interface Props {
 const { name, ref, description, tags, imageSrc, ...rest } = Astro.props
 ---
 
-<div class="container" {...rest}>
+<div class="card" {...rest}>
   <div class="image">
     <img src={imageSrc} alt={`${name} image`} loading="lazy" decoding="async" />
   </div>
@@ -30,7 +30,7 @@ const { name, ref, description, tags, imageSrc, ...rest } = Astro.props
 </div>
 
 <style>
-  .container {
+  .card {
     display: flex;
     width: 100%;
     min-width: 300px;
