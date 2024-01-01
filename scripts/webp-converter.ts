@@ -11,9 +11,10 @@ const readdirRecursively = (dir: string, files: string[] = []) => {
 
   const dirs = []
   for (const dirent of dirents) {
-    if (dirent.isDirectory()) dirs.push(`${dir}/${dirent.name}`)
+    const entryPath = path.join(dir, dirent.name)
+    if (dirent.isDirectory()) dirs.push(entryPath)
     if (dirent.isFile() && exts.includes(path.extname(dirent.name)))
-      files.push(`${dir}/${dirent.name}`)
+      files.push(entryPath)
   }
   for (const d of dirs) {
     files = readdirRecursively(d, files)
