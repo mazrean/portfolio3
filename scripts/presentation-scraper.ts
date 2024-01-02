@@ -26,6 +26,13 @@ const [deckLinks, presentations] = await Promise.all([
   presentationPromise
 ])
 
+/*
+  スライドが見つからない場合、
+  Speaker Deckの変更でスクレイピングが失敗した可能性が高いため、
+  エラーとする
+*/
+if (deckLinks.length === 0) throw 'deckLinks is empty'
+
 const presentationMap = presentations.reduce(
   (acc, presentation) => {
     return { ...acc, [presentation.ref]: presentation }
@@ -38,6 +45,14 @@ for (const deckLink of deckLinks) {
   if (presentationMap[deckLink]) continue
 
   const res = await fetch(deckLink)
+  /*
+    Status Codeが200以外の場合、
+    Speaker Deckの変更でスクレイピングが失敗した可能性が高いため、
+    エラーとする
+  */
+  if (res.status !== 200)
+    throw `Slide fetch error(${deckLink}): status ${res.status}`
+
   const $ = cheerio.load(await res.text())
 
   let title: string | undefined
