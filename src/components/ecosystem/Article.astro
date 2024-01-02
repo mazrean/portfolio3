@@ -1,0 +1,41 @@
+---
+import Button from '@components/molecule/Button.astro'
+import Grid from '@components/molecule/Grid.astro'
+import ArticleCard from '@components/organism/ArticleCard.astro'
+import Subtitle from '@components/organism/Subtitle.astro'
+import type { Article } from '@contents/article.yaml'
+
+interface Props {
+  articleList: Article[]
+}
+
+const count = 6
+
+const { articleList } = Astro.props
+---
+
+<div
+  class="container"
+  x-data={`{ total: ${articleList.length}, count: ${count} }`}>
+  <Subtitle title="Articles" />
+  <Grid minWidth="250px" maxWidth="300px">
+    {
+      articleList.map((article, index) => (
+        <ArticleCard article={article} x-show={`${index} < count`} />
+      ))
+    }
+  </Grid>
+  <Button @click={`count+=${count}`} x-show="count < total">more</Button>
+</div>
+
+<style>
+  .container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    width: 100%;
+  }
+</style>

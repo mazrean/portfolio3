@@ -2,7 +2,7 @@
   tags:
     - Go
     - Go Conference
-    - tool
+    - Tool
   ref: https://speakerdeck.com/mazrean/go-conference-mini-2023
   date: 2023/12/02
   embed: >
@@ -42,7 +42,7 @@
   tags:
     - Go
     - Docker
-    - Server
+    - CTF
   ref: https://docs.google.com/presentation/d/1xR_T3Ek6c-Vmrn_OtAhMduY9LmY9Ur3UfmlQGmaflQk/edit?usp=sharing
   date: 2021/07/14
   image: klab-lt

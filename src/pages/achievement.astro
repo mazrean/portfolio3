@@ -1,12 +1,15 @@
 ---
 import Works from '@components/ecosystem/Works.astro'
 import Presentation from '@components/ecosystem/Presentation.astro'
+import Article from '@components/ecosystem/Article.astro'
 import Layout from 'src/layouts/Layout.astro'
 import works from '@contents/works.yaml'
 import presentation from '@contents/presentation.yaml'
+import article from '@contents/article.yaml'
 ---
 
 <Layout title="" location="/achievement">
   <Works worksList={works} />
   <Presentation presentationList={presentation} />
+  <Article articleList={article.filter(v => !v.ignore)} />
 </Layout>

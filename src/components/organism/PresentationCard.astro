@@ -16,7 +16,7 @@ const { presentation, ...rest } = Astro.props
       ) : (
         <img
           src={`/presentation/${presentation.image}.webp`}
-          alt="presentation image"
+          alt={`${presentation.title} image`}
           loading="lazy"
           decoding="async"
         />

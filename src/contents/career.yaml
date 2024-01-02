@@ -1,12 +1,12 @@
 - org: 東工大デジタル創作同好会traP
   period:
-    start: 2019-04
+    start: 2019/04
   description: |
     部内サービスの開発・運用を行うSysAd班で、ゲームランチャーtraP Collectionのサーバーの開発・運用などを行っていました。
 - org: 東京工業大学大学院 情報理工学院 情報工学系
   type: Student(Master)
   period:
-    start: 2023-04
+    start: 2023/04
   description: |
     ソフトウェア工学について研究しています。
     具体的には、Gitリポジトリより抽出した変更のパターンをもとにソースコードの変更忘れを防止する研究を行っています。
@@ -15,38 +15,38 @@
     (株式会社サイバーエージェント)
   type: Intern, 1 month
   period:
-    month: 2023-11
+    month: 2023/11
   description: |
     サーバーサイドエンジニアとしてゲーム開発にかかわっていました。
 - org: ウォンテッドリー株式会社
   type: Intern, 3 weeks
   period:
-    month: 2023-08
+    month: 2023/08
   description: |
     DX SquadでKubernetesの操作を簡単に行うための内製ツールkubeのカナリアリリース機能の拡張を行いました。
 - org: 東京工業大学 情報理工学院 情報工学系
   type: Student(Bachelor)
   period:
-    start: 2019-04
-    end: 2023-03
+    start: 2019/04
+    end: 2023/03
   description: |
     情報工学について学び、学部4年ではソフトウェア工学について研究しました。
     具体的には、Gitリポジトリに蓄積された変更履歴から変更のパターンを抽出する研究を行っていました。
 - org: エヌ・ティ・ティ・コミュニケーションズ株式会社
   type: Intern, 2 weeks
   period:
-    month: 2023-02
+    month: 2023/02
   description: |
     kubernetesのYAMLの生成やCDパイプラインの構築を行うNTTグループ向けDevOps基盤「Qmonus」の開発に携わりました。
 - org: 株式会社MIXI
   type: Intern, 1 month
   period:
-    month: 2021-09
+    month: 2021/09
   description: |
     SREグループでAWSを利用してのインフラ構築業務の自動化などを行いました。
 - org: ピクシブ株式会社
   type: Intern, 2 weeks
   period:
-    month: 2021-03
+    month: 2021/03
   description: |
     エンタメのための運用型広告pixiv Adsの開発を行いました。
