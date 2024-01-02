@@ -2,6 +2,7 @@ export interface Presentation {
   title: string
   tags: string[]
   ref: string
+  data?: string
   embed?: string
   image?: string
 }
