@@ -1,0 +1,20 @@
+- title: 発想の源としてのISUCON / ISUCON Summer Fes 2023
+  tags: []
+  ref: https://speakerdeck.com/mazrean/isucon-summer-fes-2023
+  embed: >
+    <iframe id="talk_frame_1068316" class="speakerdeck-iframe"
+    src="//speakerdeck.com/player/5481e0111a4a40549e0e4a023b51e1df" width="710"
+    height="399" style="aspect-ratio:710/399; border:0; padding:0; margin:0;
+    background:transparent;" frameborder="0" allowtransparency="true"
+    allowfullscreen="allowfullscreen"></iframe>
+  image: https://files.speakerdeck.com/presentations/5481e0111a4a40549e0e4a023b51e1df/slide_0.jpg?26824722
+- title: インターフェースのラッパーを作る際の落とし穴 / Go Conference mini 2023
+  tags: []
+  ref: https://speakerdeck.com/mazrean/go-conference-mini-2023
+  embed: >
+    <iframe id="talk_frame_1114570" class="speakerdeck-iframe"
+    src="//speakerdeck.com/player/c070ede0bdd546b084709d1ec53c8e47" width="710"
+    height="399" style="aspect-ratio:710/399; border:0; padding:0; margin:0;
+    background:transparent;" frameborder="0" allowtransparency="true"
+    allowfullscreen="allowfullscreen"></iframe>
+  image: https://files.speakerdeck.com/presentations/c070ede0bdd546b084709d1ec53c8e47/slide_0.jpg?28043773
