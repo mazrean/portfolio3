@@ -1,34 +1,28 @@
 ---
-import type { Presentation } from '@contents/presentation.yaml'
+import type { Article } from '@contents/article.yaml'
 
 interface Props {
-  presentation: Presentation
+  article: Article
 }
 
-const { presentation, ...rest } = Astro.props
+const { article, ...rest } = Astro.props
 ---
 
 <div class="card" {...rest}>
   <div class="image">
-    {
-      presentation.embed ? (
-        <Fragment set:html={presentation.embed} />
-      ) : (
-        <img
-          src={`/presentation/${presentation.image}.webp`}
-          alt={`${presentation.title} image`}
-          loading="lazy"
-          decoding="async"
-        />
-      )
-    }
+    <img
+      src={`/article/${article.image}.webp`}
+      alt={`${article.title} image`}
+      loading="lazy"
+      decoding="async"
+    />
   </div>
   <div class="description">
-    <p>{presentation.tags.map(tag => `#${tag}`).join(' ')}</p>
-    <a href={presentation.ref}>
-      <h4>{presentation.title}</h4>
+    <p>{article.tags.map(tag => `#${tag}`).join(' ')}</p>
+    <a href={article.ref}>
+      <h4>{article.title}</h4>
     </a>
-    {presentation.date ? <p>{presentation.date}</p> : null}
+    <p>{article.date}</p>
   </div>
 </div>
 
