@@ -1,0 +1,66 @@
+- title: インターフェースのラッパーを作る際の落とし穴 / Go Conference mini 2023
+  tags:
+    - Go
+    - Go Conference
+    - tool
+  ref: https://speakerdeck.com/mazrean/go-conference-mini-2023
+  date: 2023/12/02
+  embed: >
+    <iframe id="talk_frame_1114570" class="speakerdeck-iframe"
+    src="//speakerdeck.com/player/c070ede0bdd546b084709d1ec53c8e47" width="100%"
+    style="aspect-ratio: 710 / 399;" frameborder="0" allowtransparency="true"
+    allowfullscreen="allowfullscreen"></iframe>
+  image: 4a673c92-cfa5-4102-8b57-6ac19ef94bb1
+- title: 発想の源としてのISUCON / ISUCON Summer Fes 2023
+  tags:
+    - ISUCON
+    - ISUCON Summer Fes
+  ref: https://speakerdeck.com/mazrean/isucon-summer-fes-2023
+  date: 2023/08/26
+  embed: >
+    <iframe id="talk_frame_1068316" class="speakerdeck-iframe"
+    src="//speakerdeck.com/player/5481e0111a4a40549e0e4a023b51e1df" width="100%"
+    style="aspect-ratio: 710 / 399;" frameborder="0" allowtransparency="true"
+    allowfullscreen="allowfullscreen"></iframe>
+  image: 2d17e3b3-0d1e-4d87-833b-125eeb335ebc
+- title: GenORM実装解説
+  tags:
+    - Go
+    - ORM
+    - Library
+  ref: https://slides.mazrean.com/trap-lt/
+  date: 2022/03/27
+  image: trap-lt
+- title: DDDで学ぶ設計講習会
+  tags:
+    - DDD
+    - Software Architecture
+  ref: https://slides.mazrean.com/trap-lt/
+  date: 2022/01/23
+  image: ddd
+- title: Dockerで作るCTF向けWebshell
+  tags:
+    - Go
+    - Docker
+    - Server
+  ref: https://docs.google.com/presentation/d/1xR_T3Ek6c-Vmrn_OtAhMduY9LmY9Ur3UfmlQGmaflQk/edit?usp=sharing
+  date: 2021/07/14
+  image: klab-lt
+- title: 鯨飼いになろう講習会2
+  tags:
+    - Docker
+  ref: https://docs.google.com/presentation/d/1HM-XMqqRYzRaXOuCrjj5g_rBHltY45-ly1t8D3ab8Kw/edit?usp=sharing
+  date: 2020/08/30
+  image: docker2
+- title: 鯨飼いになろう講習会
+  tags:
+    - Docker
+  ref: https://docs.google.com/presentation/d/1rqxr6bcgG3Gxc6hIK8xc7nc--gbbbwP-6EnIuDZB_dQ/edit?usp=sharing
+  date: 2020/08/29
+  image: docker
+- title: Golang講習会
+  tags:
+    - Go
+  ref: https://docs.google.com/presentation/d/1a0LlcX9WMc-m8c13dmOCtW-IcageQlHbG2ppdSppBEs/edit?usp=sharing
+  date: 2020/08/02
+  image: trap-golang
