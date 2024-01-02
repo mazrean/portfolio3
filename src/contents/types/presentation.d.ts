@@ -1,8 +1,8 @@
-export interface Presentation {
+export type Presentation = {
   title: string
   tags: string[]
   ref: string
-  data?: string
+  date?: string
   embed?: string
   image?: string
 }

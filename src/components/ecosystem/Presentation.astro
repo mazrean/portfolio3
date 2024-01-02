@@ -1,0 +1,44 @@
+---
+import Button from '@components/molecule/Button.astro'
+import Grid from '@components/molecule/Grid.astro'
+import PresentationCard from '@components/organism/PresentationCard.astro'
+import Subtitle from '@components/organism/Subtitle.astro'
+import type { Presentation } from '@contents/types/presentation'
+
+interface Props {
+  presentationList: Presentation[]
+}
+
+const count = 6
+
+const { presentationList } = Astro.props
+---
+
+<div
+  class="container"
+  x-data={`{ total: ${presentationList.length}, count: ${count} }`}>
+  <Subtitle title="Presentations" />
+  <Grid minWidth="250px" maxWidth="300px">
+    {
+      presentationList.map((presentation, index) => (
+        <PresentationCard
+          presentation={presentation}
+          x-show={`${index} < count`}
+        />
+      ))
+    }
+  </Grid>
+  <Button @click={`count+=${count}`} x-show="count < total">more</Button>
+</div>
+
+<style>
+  .container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    width: 100%;
+  }
+</style>
