@@ -1,7 +1,7 @@
 import * as cheerio from 'cheerio'
 import fs from 'fs/promises'
 import { parse, stringify } from 'yaml'
-import type { Presentation } from '@contents/types/presentation'
+import type { Presentation } from '@contents/presentation.yaml'
 import path from 'path'
 import https from 'https'
 
