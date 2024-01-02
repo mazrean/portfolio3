@@ -77,6 +77,21 @@ for (const deckLink of deckLinks) {
   // タイトルと説明がない場合はスキップ
   if (!title) continue
 
+  let date: string | undefined
+  for (const time of $('.deck-date')) {
+    const $time = $(time)
+
+    const dateTime = new Date($time.text())
+
+    const year = dateTime.getFullYear()
+    const month = (dateTime.getMonth() + 1).toString().padStart(2, '0')
+    const day = dateTime.getDate().toString().padStart(2, '0')
+
+    date = `${year}/${month}/${day}`
+    break
+  }
+  date = date ?? ''
+
   let embed: string | undefined
   for (const link of $('head link')) {
     const $link = $(link)
@@ -134,7 +149,8 @@ for (const deckLink of deckLinks) {
     tags: [],
     ref: deckLink,
     embed,
-    image
+    image,
+    date
   })
 }
 

@@ -2,7 +2,7 @@ export type Presentation = {
   title: string
   tags: string[]
   ref: string
-  date?: string
+  date: string
   embed?: string
   image?: string
 }
