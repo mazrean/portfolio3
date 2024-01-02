@@ -2,9 +2,12 @@ import * as cheerio from 'cheerio'
 import fs from 'fs/promises'
 import { parse, stringify } from 'yaml'
 import type { Presentation } from '@contents/types/presentation'
+import path from 'path'
+import https from 'https'
 
 const user = 'mazrean'
 const presentationYamlPath = './src/contents/presentation.yaml'
+const imageDirPath = './original/presentation'
 
 const deckLinksPromise = (async () => {
   const res = await fetch(`https://speakerdeck.com/${user}`)
@@ -14,6 +17,7 @@ const deckLinksPromise = (async () => {
       return `https://speakerdeck.com${$(el).attr('href')}`
     })
     .get()
+    .reverse()
 })()
 
 const presentationPromise = (async () => {
@@ -56,7 +60,7 @@ for (const deckLink of deckLinks) {
   const $ = cheerio.load(await res.text())
 
   let title: string | undefined
-  let image: string | undefined
+  let imageRef: string | undefined
   for (const meta of $('head meta')) {
     const $meta = $(meta)
 
@@ -67,7 +71,7 @@ for (const deckLink of deckLinks) {
     if (property === 'og:title') {
       title = content
     } else if (property === 'og:image') {
-      image = content
+      imageRef = content
     }
   }
   // タイトルと説明がない場合はスキップ
@@ -101,7 +105,29 @@ for (const deckLink of deckLinks) {
   }
 
   // 画像も埋め込みもない場合はスキップ
-  if (!image && !embed) continue
+  if (!imageRef && !embed) continue
+
+  let image: string | undefined
+  if (imageRef) {
+    image = crypto.randomUUID()
+    https.get(imageRef, async res => {
+      await fs.writeFile(path.join(imageDirPath, `${image}.png`), res)
+    })
+  }
+
+  if (embed) {
+    const $ = cheerio.load(embed, null, false)
+
+    const width = $('iframe').attr('width')
+    const height = $('iframe').attr('height')
+    if (width && height) {
+      $('iframe').attr('width', '100%')
+      $('iframe').attr('height', null)
+      $('iframe').attr('style', `aspect-ratio: ${width} / ${height};`)
+
+      embed = $.html() ?? embed
+    }
+  }
 
   presentations.push({
     title,
