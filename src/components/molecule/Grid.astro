@@ -1,0 +1,25 @@
+---
+interface Props {
+  minWidth: string
+  maxWidth: string
+}
+
+const { minWidth, maxWidth } = Astro.props
+---
+
+<div class="grid">
+  <slot />
+</div>
+
+<style define:vars={{ minWidth, maxWidth }}>
+  .grid {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(var(--minWidth), var(--maxWidth))
+    );
+    gap: 5px;
+  }
+</style>

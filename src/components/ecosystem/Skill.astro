@@ -1,4 +1,5 @@
 ---
+import Grid from '@components/molecule/Grid.astro'
 import TextBox from '@components/molecule/TextBox.astro'
 import SkillCard from '@components/organism/SkillCard.astro'
 import Subtitle from '@components/organism/Subtitle.astro'
@@ -10,7 +11,7 @@ import skill from '@contents/skill.yaml'
   <TextBox maxWidth="100%">
     {skill.description}
   </TextBox>
-  <div class="skills">
+  <Grid minWidth="250px" maxWidth="350px">
     {
       skill.list
         .slice(0, 12)
@@ -23,7 +24,7 @@ import skill from '@contents/skill.yaml'
           />
         ))
     }
-  </div>
+  </Grid>
 </div>
 
 <style>
@@ -35,12 +36,5 @@ import skill from '@contents/skill.yaml'
     align-items: center;
     gap: 0.4rem;
     width: 100%;
-  }
-  .skills {
-    width: 100%;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
-    gap: 5px;
   }
 </style>

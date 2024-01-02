@@ -1,0 +1,27 @@
+---
+const { ...rest } = Astro.props
+---
+
+<button {...rest}>
+  <slot />
+</button>
+
+<style>
+  button {
+    color: var(--background);
+    background-color: var(--accent);
+    border-color: var(--background);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.5rem;
+    padding: 0 0.5rem;
+    transition: all 0.2s ease-in-out;
+  }
+
+  button:hover,
+  button:active {
+    color: var(--text);
+    background-color: var(--background);
+    border-color: var(--accent);
+  }
+</style>

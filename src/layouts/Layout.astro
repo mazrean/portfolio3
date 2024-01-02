@@ -27,7 +27,9 @@ const { location, title } = Astro.props;
     <header>
       <Header location={location} />
     </header>
-    <slot />
+    <main>
+      <slot />
+    </main>
   </body>
 </html>
 <style is:global>
@@ -78,5 +80,18 @@ const { location, title } = Astro.props;
     justify-content: center;
     align-items: center;
     border-bottom: 2px solid var(--accent);
+  }
+
+  main {
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 30px;
   }
 </style>

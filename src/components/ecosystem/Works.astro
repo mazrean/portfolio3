@@ -1,0 +1,53 @@
+---
+import Button from '@components/molecule/Button.astro'
+import Grid from '@components/molecule/Grid.astro'
+import Subtitle from '@components/organism/Subtitle.astro'
+import WorksCard from '@components/organism/WorksCard.astro'
+
+interface Props {
+  worksList: {
+    name: string
+    ref?: string
+    description: string
+    tags: string[]
+    image: string
+  }[]
+}
+
+const count = 6
+
+const { worksList } = Astro.props
+---
+
+<div
+  class="container"
+  x-data={`{ total: ${worksList.length}, count: ${count} }`}>
+  <Subtitle title="Works" />
+  <Grid minWidth="250px" maxWidth="300px">
+    {
+      worksList.map((works, index) => (
+        <WorksCard
+          name={works.name}
+          ref={works.ref}
+          description={works.description}
+          tags={works.tags}
+          imageSrc={`/works/${works.image}.webp`}
+          x-show={`${index} < count`}
+        />
+      ))
+    }
+  </Grid>
+  <Button @click={`count+=${count}`} x-show="count < total">more</Button>
+</div>
+
+<style>
+  .container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    width: 100%;
+  }
+</style>
