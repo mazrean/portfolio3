@@ -6,20 +6,20 @@
     Go言語のSQL Builderです。
     1.18で入ったジェネリクスを利用して、型による制約でバグを防止するのが特徴です。
 - name: isucrud
-  tags: [ Go, ISUCON, Static Analysis, tool ]
+  tags: [ Go, ISUCON, Static Analysis, Tool ]
   ref: https://github.com/mazrean/isucrud
   image: isucrud
   description: |
     ISUCON用のDBの各テーブルへのCRUDを可視化することで、キャッシュすべき箇所の判断を助けるツールです。 
 - name: traP Collection
-  tags: [ Go, traP, Server ]
+  tags: [ Go, traP ]
   ref: https://trap.jp/post/1815/
   image: trap-collection
   description: |
     traPで開発したゲームの管理・展示・販売を行うゲームランチャーです。
     コミケで販売しています。
 - name: ssh-separator
-  tags: [ Go, Docker, Server ]
+  tags: [ Go, Docker, CTF ]
   ref: https://trap.jp/post/1343/
   image: ssh-separator
   description: |
@@ -40,7 +40,7 @@
     バーコードを読み取り本を管理することで、本の重複購入を防止するアプリケーションです。
     CDNのキャッシュとエッジワーカーを活用し、軽い動作を実現しています。
 - name: iwrapper
-  tags: [ Go, Static Analysis, tool ]
+  tags: [ Go, Static Analysis, Tool ]
   ref: https://github.com/mazrean/iwrapper/
   image: iwrapper
   description: |
@@ -54,19 +54,19 @@
     Astro.jsとAlpine.jsを使って作成したブログ機能付きのポートフォリオサイトです。
     SSGによりパフォーマンスを向上させつつ、依存を削減しメンテナンス性を向上させています。
 - name: isucon-go-tools
-  tags: [ Go, ISUCON, Static Analysis, tool]
+  tags: [ Go, ISUCON, Static Analysis, Tool]
   ref: https://github.com/mazrean/isucon-go-tools
   image: isucon-go-tools
   description: |
     ISUCON用のutilityと、計測機器の導入などの変更を行うコード書き換えツールです。
 - name: isuginx
-  tags: [ Go, ISUCON, Nginx, tool ]
+  tags: [ Go, ISUCON, Nginx, Tool ]
   ref: https://github.com/mazrean/isuginx
   image: isuginx
   description: |
     ISUCON用のNginxの設定ファイルへ秘伝のたれの流し込みを行うツールです。
 - name: go-clone-detection
-  tags: [ Go, Static Analysis, tool ]
+  tags: [ Go, Static Analysis, Tool ]
   ref: https://github.com/mazrean/go-clone-detection
   image: go-clone-detection
   description: |
@@ -79,13 +79,13 @@
     Gitコマンドの一部機能をRustで実装したツールです。
     標準ライブラリのみで1から実装しています。
 - name: go-feature-envy
-  tags: [ Go, traP, Server ]
+  tags: [ Go, Static Analysis, Tool ]
   ref: https://github.com/mazrean/go-feature-envy
   image: go-feature-envy
   description: |
     GoのソースコードからFeature Envy(外部モジュールへの過剰な依存による凝集度の低下)を検出する静的解析ツールです。
 - name: Yuri-Bot
-  tags: [ Go, traP, RSS, Server ]
+  tags: [ Go, traP, RSS ]
   image: yuri-bot
   description: |
     traQでRSSを購読するためのbotです。

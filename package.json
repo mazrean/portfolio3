@@ -10,6 +10,7 @@
     "type-check": "tsc",
     "gen:webp": "esno ./scripts/webp-converter.ts",
     "gen:presentation": "esno ./scripts/presentation-scraper.ts",
+    "gen:article": "esno ./scripts/article-scraper.ts",
     "preview": "astro preview",
     "astro": "astro"
   },
