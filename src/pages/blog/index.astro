@@ -1,0 +1,20 @@
+---
+import Layout from 'src/layouts/Layout.astro'
+import Blog from '@components/ecosystem/Blog.astro'
+import { blogList } from '@lib/contents'
+
+const blogDatas = await Promise.all(
+  blogList.map(async blog => {
+    return {
+      title: blog.data.title,
+      ref: `/blog/${blog.slug}`,
+      tags: blog.data.tags,
+      date: blog.data.publishDate
+    }
+  })
+)
+---
+
+<Layout title="" location="/blog">
+  <Blog blogList={blogDatas} />
+</Layout>

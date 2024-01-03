@@ -1,4 +1,4 @@
-declare module '@contents/presentation.yaml' {
+declare module '@yaml/presentation' {
   export type Presentation = {
     title: string
     tags: string[]

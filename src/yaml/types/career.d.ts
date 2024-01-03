@@ -1,4 +1,4 @@
-declare module '@contents/career.yaml' {
+declare module '@yaml/career' {
   const value: {
     org: string
     type?: string

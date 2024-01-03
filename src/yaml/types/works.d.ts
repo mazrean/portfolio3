@@ -1,4 +1,4 @@
-declare module '@contents/works.yaml' {
+declare module '@yaml/works' {
   const value: {
     name: string
     ref?: string

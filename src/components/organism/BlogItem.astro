@@ -1,0 +1,82 @@
+---
+import Badge from '@components/molecule/Badge.astro'
+interface Props {
+  blog: {
+    title: string
+    ref: string
+    tags: string[]
+    date: Date
+  }
+}
+
+const { blog } = Astro.props
+
+const year = blog.date.getFullYear()
+const month = (blog.date.getMonth() + 1).toString().padStart(2, '0')
+const day = blog.date.getDate().toString().padStart(2, '0')
+
+const date = `${year}/${month}/${day}`
+---
+
+<div class="container">
+  <a href={blog.ref}>
+    <h4>{blog.title}</h4>
+  </a>
+  <div class="info">
+    <p>{date}</p>
+    <div class="batch">
+      {blog.tags.map(tag => <Badge text={tag} />)}
+    </div>
+  </div>
+</div>
+
+<style>
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+  }
+  a {
+    text-decoration: none;
+    transition: opacity 0.2s ease-in-out;
+  }
+  a:hover {
+    opacity: 0.5;
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.75rem;
+  }
+
+  .description {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-width: 100%;
+    word-break: break-all;
+  }
+  .info {
+    display: inline-flex;
+    align-items: center;
+    justify-content: left;
+    gap: 0.75rem;
+  }
+  .batch {
+    display: inline-flex;
+    align-items: center;
+    justify-content: left;
+    gap: 0.25rem;
+    font-size: 1.25rem;
+  }
+</style>

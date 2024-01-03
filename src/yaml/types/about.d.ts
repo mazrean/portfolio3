@@ -1,4 +1,4 @@
-declare module '@contents/about.yaml' {
+declare module '@yaml/about' {
   const value: {
     name: string
     ruby: string

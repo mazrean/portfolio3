@@ -1,12 +1,12 @@
 import * as cheerio from 'cheerio'
 import fs from 'fs/promises'
 import { parse, stringify } from 'yaml'
-import type { Presentation } from '@contents/presentation.yaml'
+import type { Presentation } from '@yaml/presentation'
 import path from 'path'
 import https from 'https'
 
 const user = 'mazrean'
-const presentationYamlPath = './src/contents/presentation.yaml'
+const presentationYamlPath = './src/yaml/presentation.yaml'
 const imageDirPath = './original/presentation'
 
 const deckLinksPromise = (async () => {
