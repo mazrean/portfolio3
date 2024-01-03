@@ -1,0 +1,352 @@
+---
+import Badge from '@components/molecule/Badge.astro'
+import { getBlogBySlug, blogList } from '@lib/contents'
+import Layout from 'src/layouts/Layout.astro'
+
+export function getStaticPaths() {
+  return blogList.map(blog => ({
+    params: { slug: blog.slug }
+  }))
+}
+
+const { slug } = Astro.params
+
+const blog = await getBlogBySlug(slug)
+if (!blog) throw new Error(`No blog found for slug: ${slug}`)
+
+const dateTime = blog.data.publishDate
+const year = dateTime.getFullYear()
+const month = (dateTime.getMonth() + 1).toString().padStart(2, '0')
+const day = dateTime.getDate().toString().padStart(2, '0')
+
+const date = `${year}/${month}/${day}`
+
+const { Content } = await blog.render()
+---
+
+<Layout title={blog.data.title} location="/blog">
+  <div class="content">
+    <div class="head">
+      <h1>{blog.data.title}</h1>
+      <div class="info">
+        <p>{date}</p>
+        <div class="batch">
+          {blog.data.tags.map(tag => <Badge text={tag} />)}
+        </div>
+      </div>
+    </div>
+    <Content />
+  </div>
+</Layout>
+
+<style>
+  .head {
+    margin-bottom: 1.2rem;
+  }
+  h1 {
+    color: var(--accent);
+    word-break: break-word;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0 0 0.5rem 0;
+  }
+
+  p {
+    font-size: 0.75rem;
+  }
+  .info {
+    display: inline-flex;
+    align-items: center;
+    justify-content: left;
+    gap: 0.75rem;
+  }
+  .batch {
+    display: inline-flex;
+    align-items: center;
+    justify-content: left;
+    gap: 0.25rem;
+    font-size: 1.5rem;
+  }
+</style>
+
+<style is:global>
+  .content {
+    width: 100%;
+    text-align: left;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.2;
+    word-wrap: break-word;
+    font-size: 0.75rem;
+  }
+
+  .content > :first-child {
+    margin-top: 0 !important;
+  }
+
+  .content > :last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .content a {
+    background-color: initial;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .content a:active,
+  .content a:hover {
+    outline-width: 0;
+    opacity: 0.5;
+  }
+
+  .content a:not([href]) {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .content strong {
+    font-weight: bold;
+  }
+
+  .content hr {
+    height: 0.25em;
+    padding: 0;
+    margin: 12px 0;
+    border: 0;
+    background-color: #e1e4e8;
+    overflow: hidden;
+  }
+
+  .content h1,
+  .content h2,
+  .content h3,
+  .content h4,
+  .content h5,
+  .content h6 {
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.25;
+    color: var(--accent);
+  }
+
+  .content h1,
+  .content h2 {
+    padding-bottom: 0.3em;
+  }
+
+  .content h1 {
+    font-size: 2em;
+  }
+
+  .content h2 {
+    font-size: 1.5em;
+  }
+
+  .content h3 {
+    font-size: 1.25em;
+  }
+
+  .content h4 {
+    font-size: 1em;
+  }
+
+  .content h5 {
+    font-size: 0.875em;
+    transform: rotate(0.03deg);
+  }
+
+  .content h6 {
+    font-size: 0.85em;
+    transform: rotate(0.03deg);
+    color: #6a737d;
+  }
+
+  .content p {
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  .content blockquote {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 8px;
+    margin-left: 20px;
+    padding: 0 12px;
+    color: #6a737d;
+  }
+
+  .content blockquote > :first-child {
+    margin-top: 0;
+  }
+
+  .content blockquote > :last-child {
+    margin-bottom: 0;
+  }
+
+  .content blockquote::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 0.25em;
+    height: 100%;
+    background: var(--accent);
+  }
+
+  .content > blockquote,
+  .content :not(blockquote) > blockquote {
+    padding-bottom: 4px;
+    overflow: auto;
+  }
+
+  .content > blockquote::before,
+  .content :not(blockquote) > blockquote::before {
+    height: calc(100% - 4px);
+  }
+
+  .content ol {
+    list-style: decimal;
+  }
+
+  .content ul {
+    list-style: disc;
+  }
+
+  .content ol,
+  .content ul {
+    padding-left: 2em;
+    margin-top: 0;
+    margin-bottom: 8px;
+    word-break: break-all;
+  }
+
+  .content ol ol,
+  .content ul ol {
+    list-style-type: lower-roman;
+  }
+
+  .content ol ol,
+  .content ol ul,
+  .content ul ol,
+  .content ul ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .content ol ol ol,
+  .content ol ul ol,
+  .content ul ol ol,
+  .content ul ul ol {
+    list-style-type: lower-alpha;
+  }
+
+  .content li > p {
+    margin-top: 8px;
+  }
+
+  .content li + li {
+    margin-top: 4px;
+  }
+
+  .content > ul,
+  .content > ol,
+  .content :not(li) > ul,
+  .content :not(li) > ol {
+    padding-bottom: 4px;
+    overflow: auto;
+  }
+
+  .content code,
+  .content pre {
+    font-size: 0.85em;
+    border-radius: 4px;
+  }
+
+  .content code {
+    display: inline-block;
+    padding: 2px 6px;
+    margin: 2px 0;
+  }
+
+  .content s > code {
+    text-decoration: line-through;
+  }
+
+  .content pre {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 16px;
+    overflow-wrap: normal;
+    line-height: 1.45;
+  }
+
+  .content pre cite {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 4px;
+    border-bottom-left-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .content pre code {
+    display: block;
+    padding: 16px;
+    margin: 0;
+    border: 0;
+    font-size: 1em;
+    overflow: auto;
+    word-break: normal;
+    overflow-wrap: normal;
+    white-space: pre;
+    line-height: inherit;
+  }
+
+  .content table {
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-bottom: 4px;
+    overflow: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+
+  .content td,
+  .content th {
+    padding: 4px 12px;
+    border: 1px solid #dfe2e5;
+  }
+
+  .content th {
+    font-weight: bold;
+    color: var(--accent);
+  }
+
+  .content tr {
+    border-top: 1px solid #c6cbd1;
+    background-color: #fff;
+  }
+
+  .content tr:nth-child(2n) {
+    background-color: #f6f8fa;
+  }
+
+  .content mark {
+    color: black;
+    background-color: yellow;
+  }
+
+  .content img {
+    max-width: 100%;
+    border-style: none;
+    box-sizing: initial;
+  }
+
+  .content .katex-block {
+    overflow: auto;
+    margin-bottom: 4px;
+  }
+</style>

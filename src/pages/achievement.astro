@@ -8,7 +8,7 @@ import presentation from '@yaml/presentation'
 import article from '@yaml/article'
 ---
 
-<Layout title="" location="/achievement">
+<Layout title="Achievements" location="/achievement">
   <Works worksList={works} />
   <Presentation presentationList={presentation} />
   <Article articleList={article.filter(v => !v.ignore)} />
