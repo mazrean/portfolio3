@@ -7,7 +7,7 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "lint": "eslint --cache --ext .ts,.astro src",
-    "type-check": "tsc",
+    "type-check": "astro sync && tsc",
     "gen:webp": "esno ./scripts/webp-converter.ts",
     "gen:presentation": "esno ./scripts/presentation-scraper.ts",
     "gen:article": "esno ./scripts/article-scraper.ts",
