@@ -1,11 +1,11 @@
-import type { Article } from '@contents/article.yaml'
+import type { Article } from '@yaml/article'
 import * as cheerio from 'cheerio'
 import fs from 'fs/promises'
 import { parse, stringify } from 'yaml'
 import path from 'path'
 import https from 'https'
 
-const articleYamlPath = './src/contents/article.yaml'
+const articleYamlPath = './src/yaml/article.yaml'
 const imageDirPath = './original/article'
 
 const rssList = [

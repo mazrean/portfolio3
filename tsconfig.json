@@ -4,7 +4,7 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["src/components/*"],
-      "@contents/*": ["src/contents/*"],
+      "@yaml/*": ["src/yaml/*.yaml"],
       "@lib/*": ["src/lib/*"]
     },
     "typeRoots": ["./node_modules/@types", "./src/*/types"]

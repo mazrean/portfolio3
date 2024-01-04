@@ -1,12 +1,17 @@
 ---
+import { getEntry } from 'astro:content'
 import Subtitle from '@components/organism/Subtitle.astro'
-import * as Description from '@contents/InterestDescription.md'
+
+const interest = await getEntry('portfolio', 'interest')
+if (!interest) throw new Error('Interest not found')
+
+const { Content } = await interest.render()
 ---
 
 <div class="container">
   <Subtitle title="Interest" />
   <div class="markdown">
-    <Description.Content />
+    <Content />
   </div>
 </div>
 

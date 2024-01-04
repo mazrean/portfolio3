@@ -1,4 +1,4 @@
-declare module '@contents/article.yaml' {
+declare module '@yaml/article' {
   export type Article = {
     title: string
     tags: string[]

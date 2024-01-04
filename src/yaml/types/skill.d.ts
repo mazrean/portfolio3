@@ -1,4 +1,4 @@
-declare module '@contents/skill.yaml' {
+declare module '@yaml/skill' {
   const value: {
     description: string
     list: {

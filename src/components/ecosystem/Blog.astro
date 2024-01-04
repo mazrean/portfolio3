@@ -1,0 +1,29 @@
+---
+import BlogItem from '@components/organism/BlogItem.astro'
+interface Props {
+  blogList: {
+    title: string
+    ref: string
+    tags: string[]
+    date: Date
+  }[]
+}
+
+const { blogList } = Astro.props
+---
+
+<div class="container">
+  {blogList.map(item => <BlogItem blog={item} />)}
+</div>
+
+<style>
+  .container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+</style>

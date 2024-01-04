@@ -7,7 +7,7 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "lint": "eslint --cache --ext .ts,.astro src",
-    "type-check": "tsc",
+    "type-check": "astro sync && tsc",
     "gen:webp": "esno ./scripts/webp-converter.ts",
     "gen:presentation": "esno ./scripts/presentation-scraper.ts",
     "gen:article": "esno ./scripts/article-scraper.ts",
@@ -25,6 +25,9 @@
     "alpinejs": "^3.13.3",
     "astro": "^4.0.8",
     "cheerio": "^1.0.0-rc.12",
+    "rehype-katex": "^7.0.0",
+    "remark-math": "^6.0.0",
+    "satori": "^0.10.11",
     "sharp": "^0.33.1",
     "typescript": "^5.3.3",
     "yaml": "^2.3.4"
