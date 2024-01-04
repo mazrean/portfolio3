@@ -4,6 +4,7 @@ import sharp from 'sharp'
 
 const input_dir = './original'
 const output_dir = './public'
+const noResizeDir = 'blog/image'
 const exts = ['.jpg', '.png']
 
 const readdirRecursively = (dir: string, files: string[] = []) => {
@@ -30,6 +31,12 @@ for (const image of readdirRecursively(input_dir)) {
   })
   fs.mkdirSync(path.dirname(webp), { recursive: true })
   if (fs.existsSync(webp)) continue
+
+  if (path.relative(input_dir, image).startsWith(noResizeDir)) {
+    sharp(image).webp().toFile(webp)
+    continue
+  }
+
   sharp(image)
     .resize(350, 150, {
       fit: 'outside'
