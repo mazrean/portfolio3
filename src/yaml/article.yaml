@@ -6,15 +6,6 @@
   date: 2023/12/07
   image: a641c6fc-bd4f-40b0-bb20-8304743b2a13
   ignore: false
-- title: ISUCON13にツールの力で勝ちたかった(mazrean)
-  tags:
-    - ISUCON
-    - Go
-    - Tool
-  ref: https://trap.jp/post/2046/
-  date: 2023/11/26
-  image: 3b8c94fb-81ac-4cf6-b9a3-f40e2bbab355
-  ignore: false
 - title: traP Collectionでのダウンタイムほぼ0のAPI移行
   tags:
     - Go
