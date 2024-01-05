@@ -11,18 +11,6 @@
     style="aspect-ratio: 710 / 399;" frameborder="0" allowtransparency="true"
     allowfullscreen="allowfullscreen"></iframe>
   image: 4a673c92-cfa5-4102-8b57-6ac19ef94bb1
-- title: 発想の源としてのISUCON / ISUCON Summer Fes 2023
-  tags:
-    - ISUCON
-    - ISUCON Summer Fes
-  ref: https://speakerdeck.com/mazrean/isucon-summer-fes-2023
-  date: 2023/08/26
-  embed: >
-    <iframe id="talk_frame_1068316" class="speakerdeck-iframe"
-    src="//speakerdeck.com/player/5481e0111a4a40549e0e4a023b51e1df" width="100%"
-    style="aspect-ratio: 710 / 399;" frameborder="0" allowtransparency="true"
-    allowfullscreen="allowfullscreen"></iframe>
-  image: 2d17e3b3-0d1e-4d87-833b-125eeb335ebc
 - title: GenORM実装解説
   tags:
     - Go
