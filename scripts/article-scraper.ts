@@ -47,6 +47,7 @@ const articleMap = articles.reduce(
   {} as { [key: string]: Article }
 )
 
+const newArticles: Article[] = []
 for (const rssData of rssDataList.flat()) {
   // 既に登録されている場合はスキップ
   if (articleMap[rssData.link]) continue
@@ -91,14 +92,23 @@ for (const rssData of rssDataList.flat()) {
 
   const date = `${year}/${month}/${day}`
 
-  articles.push({
+  const newArticle = {
     title: rssData.title,
     tags: [],
     ref: rssData.link,
     date,
     image,
     ignore: false
-  })
+  }
+  articles.push(newArticle)
+  newArticles.push(newArticle)
+}
+
+if (newArticles.length > 0) {
+  process.stdout.write('# New Articles\n')
+  for (const newArticle of newArticles) {
+    process.stdout.write(`- [${newArticle.title}](${newArticle.ref})\n`)
+  }
 }
 
 const articleYaml = stringify(articles.reverse(), { indent: 2 })

@@ -44,6 +44,7 @@ const presentationMap = presentations.reduce(
   {} as { [key: string]: Presentation }
 )
 
+const newPresentations: Presentation[] = []
 for (const deckLink of deckLinks) {
   // 既に登録されている場合はスキップ
   if (presentationMap[deckLink]) continue
@@ -144,14 +145,25 @@ for (const deckLink of deckLinks) {
     }
   }
 
-  presentations.push({
+  const newPresentation = {
     title,
     tags: [],
     ref: deckLink,
     embed,
     image,
     date
-  })
+  }
+  presentations.push(newPresentation)
+  newPresentations.push(newPresentation)
+}
+
+if (newPresentations.length > 0) {
+  process.stdout.write('# New Presentations\n')
+  for (const newPresentation of newPresentations) {
+    process.stdout.write(
+      `- [${newPresentation.title}](${newPresentation.ref})\n`
+    )
+  }
 }
 
 const presentationYaml = stringify(presentations.reverse(), { indent: 2 })
