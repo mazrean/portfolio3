@@ -1,0 +1,71 @@
+on:
+  schedule:
+    - cron: 0 0 * * 6
+  workflow_dispatch:
+    
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  NODE_VERSION: '20'
+
+jobs:
+  article:
+    name: Article
+    runs-on: ubuntu-latest
+    env:
+      BRANCH: cron/update-article
+    steps:
+      - uses: actions/checkout@v3.5.3
+        with:
+          fetch-depth: 0
+      - run: git checkout -B ${{ env.BRANCH }}
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+          cache-dependency-path: ./package-lock.json
+      - run: npm ci
+      - name: Update article
+        id: update
+        run: npm run gen:article
+      - name: Check diff
+        id: diff
+        run: git diff origin/${{ github.ref_name }} --exit-code
+        continue-on-error: true
+      - run: |
+          git add .
+          git commit -m "article update" --author="github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          gh pr close ${{ env.BRANCH }} || true
+          gh pr create -B main -t "CRON:記事情報更新" -b "${{ steps.update.outputs.stdout }}"
+        if: steps.diff.outcome == 'failure'
+  presentation:
+    name: Presentation
+    runs-on: ubuntu-latest
+    env:
+      BRANCH: cron/update-presentation
+    steps:
+      - uses: actions/checkout@v3.5.3
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+          cache-dependency-path: ./package-lock.json
+      - run: npm ci
+      - name: Update presentation
+        id: update
+        run: npm run gen:presentation
+      - name: Check diff
+        id: diff
+        run: git diff origin/${{ github.ref_name }} --exit-code
+        continue-on-error: true
+      - run: |
+          git add .
+          git commit -m "presentation update" --author="github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          gh pr close ${{ env.BRANCH }} || true
+          gh pr create -B main -t "CRON:プレゼン情報更新" -b "${{ steps.update.outputs.stdout }}"
+        if: steps.diff.outcome == 'failure'
