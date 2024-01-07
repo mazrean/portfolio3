@@ -1,0 +1,35 @@
+{
+  "name": "Mazrean Portfolio 3",
+  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-20",
+
+  "customizations": {
+    "codespaces": {
+      "openFiles": ["src/yaml/about.astro"]
+    },
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      },
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "astro-build.astro-vscode"
+      ]
+    }
+  },
+
+  "portsAttributes": {
+    "4321": {
+      "label": "Application",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "forwardPorts": [4321],
+  "postCreateCommand": "npm install",
+  "postAttachCommand": "npm run dev",
+  "remoteUser": "node",
+  "workspaceFolder": "/workspace",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+  ]
+}
