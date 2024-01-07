@@ -25,11 +25,9 @@
     }
   },
   "forwardPorts": [4321],
+
   "postCreateCommand": "npm install",
   "postAttachCommand": "npm run dev",
   "remoteUser": "node",
-  "workspaceFolder": "/workspace",
-  "mounts": [
-    "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
-  ]
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
 }
