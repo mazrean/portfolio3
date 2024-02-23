@@ -23,7 +23,7 @@
     "@iconify/tools": "^4.0.0",
     "@types/alpinejs": "^3.13.6",
     "alpinejs": "^3.13.3",
-    "astro": "^4.1.2",
+    "astro": "^4.4.4",
     "cheerio": "^1.0.0-rc.12",
     "rehype-katex": "^7.0.0",
     "remark-math": "^6.0.0",
