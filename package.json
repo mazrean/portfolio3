@@ -27,7 +27,7 @@
     "cheerio": "^1.0.0-rc.12",
     "rehype-katex": "^7.0.0",
     "remark-math": "^6.0.0",
-    "satori": "^0.10.11",
+    "satori": "^0.10.13",
     "sharp": "^0.33.2",
     "typescript": "^5.3.3",
     "yaml": "^2.4.0"
