@@ -8,7 +8,7 @@
 - name: FormStream
   tags: [ Go, Library ]
   ref: https://github.com/mazrean/formstream
-  image: 
+  image: formstream
   description: |
     Go言語のmultipart/form-dataのパーサーライブラリです。
     可能な限りストリーム処理することで、省メモリかつ高速なのが特徴です。
