@@ -5,6 +5,13 @@
   description: |
     Go言語のSQL Builderです。
     1.18で入ったジェネリクスを利用して、型による制約でバグを防止するのが特徴です。
+- name: FormStream
+  tags: [ Go, Library ]
+  ref: https://github.com/mazrean/formstream
+  image: formstream
+  description: |
+    Go言語のmultipart/form-dataのパーサーライブラリです。
+    可能な限りストリーム処理することで、省メモリかつ高速なのが特徴です。
 - name: isucrud
   tags: [ Go, ISUCON, Static Analysis, Tool ]
   ref: https://github.com/mazrean/isucrud
