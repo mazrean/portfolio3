@@ -1,3 +1,15 @@
+- title: "multipart/form-dataの省メモリパース / Go Conference 2024 Pre Party"
+  tags:
+    - Go
+    - Library
+  ref: https://speakerdeck.com/mazrean/go-conference-2024-pre-party
+  embed: >
+    <iframe id="talk_frame_1196675" class="speakerdeck-iframe"
+    src="//speakerdeck.com/player/6e48a129bba34cfc88516d38d3b89a44" width="100%"
+    style="aspect-ratio: 710 / 399;" frameborder="0" allowtransparency="true"
+    allowfullscreen="allowfullscreen"></iframe>
+  image: 714782c5-3aee-4168-b2c7-89f636459d7d
+  date: 2024/06/07
 - title: インターフェースのラッパーを作る際の落とし穴 / Go Conference mini 2023
   tags:
     - Go
