@@ -1,6 +1,8 @@
 - title: "multipart/form-dataの省メモリパース / Go Conference 2024 Pre Party
     #gocon24_preparty"
-  tags: []
+  tags:
+    - Go
+    - Library
   ref: https://speakerdeck.com/mazrean/go-conference-2024-pre-party
   embed: >
     <iframe id="talk_frame_1196675" class="speakerdeck-iframe"
