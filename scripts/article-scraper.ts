@@ -10,7 +10,8 @@ const imageDirPath = './original/article'
 
 const rssList = [
   'https://zenn.dev/mazrean/feed',
-  'https://trap.jp/author/mazrean/rss/'
+  'https://trap.jp/author/mazrean/rss/',
+  'https://engineering.dena.com/blog/authors/shunsuke-wakamatsu/index.xml'
 ]
 
 const rssPromises = rssList.map(async rss =>
