@@ -1,3 +1,13 @@
+- title: 技術的挑戦を通して感じるDeNA [日比谷音楽祭おさんぽアプリ2024 サーバー編]
+  tags:
+    - Go
+    - GCP
+    - htmx
+    - Server
+  ref: https://engineering.dena.com/blog/2024/06/hibiya2024-intern-sv/
+  date: 2024/06/25
+  image: 9d30ecde-e94f-43a2-be59-076ca8e7c592
+  ignore: false
 - title: multipart/form-dataの省メモリかつ高速なパーサー「FormStream」
   tags:
     - Go
