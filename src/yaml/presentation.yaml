@@ -10,6 +10,7 @@
     allowfullscreen="allowfullscreen"></iframe>
   image: 714782c5-3aee-4168-b2c7-89f636459d7d
   date: 2024/06/07
+
 - title: インターフェースのラッパーを作る際の落とし穴 / Go Conference mini 2023
   tags:
     - Go
