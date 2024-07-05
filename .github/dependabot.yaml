@@ -7,3 +7,14 @@ updates:
     day: saturday
     time: "00:00"
     timezone: Asia/Tokyo
+  groups:
+    types:
+      patterns:
+        - '@types/*'
+    formatter:
+      patterns:
+        - '*eslint*'
+        - '*prettier*'
+    patches:
+      update-types:
+        - 'patch'
