@@ -30,7 +30,7 @@
     "satori": "^0.10.14",
     "sharp": "^0.33.4",
     "typescript": "^5.5.4",
-    "yaml": "^2.4.5"
+    "yaml": "^2.5.0"
   },
   "devDependencies": {
     "@iconify-json/devicon": "^1.1.49",
