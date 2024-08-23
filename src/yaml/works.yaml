@@ -33,12 +33,12 @@
     ssh接続をユーザーごとに用意したDockerコンテナへ振り分けるアプリケーションです。
     traPで行う初心者向けCTFイベントのために作成しました。
 - name: One Poll
-  tags: [ Go, Vue.js ]
+  tags: [ Go, Vue.js, WebAuthn ]
   ref: https://one-poll.mazrean.com/
   image: one-poll
   description: |
-    気軽に質問投稿、回答ができる投票アプリケーションです。
-    整理された1画面で大半の操作が完結する操作性と動作の軽さにこだわっています。
+    1操作で大半の操作が完結する気軽な投票アプリケーションです。
+    WebAuthnに対応し、認証も簡単に行えます。
 - name: 重Book
   tags: [ Go, Vue.js, Cloudflare Workers ]
   ref: https://cho-book.mazrean.com/
