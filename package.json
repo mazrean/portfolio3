@@ -18,7 +18,7 @@
     "@astrojs/alpinejs": "^0.4.0",
     "@astrojs/check": "^0.9.3",
     "@fontsource/inter": "^5.0.20",
-    "@fontsource/noto-sans-jp": "^5.0.19",
+    "@fontsource/noto-sans-jp": "^5.1.0",
     "@iconify/iconify": "^3.1.1",
     "@iconify/tools": "^4.0.7",
     "@types/alpinejs": "^3.13.10",
