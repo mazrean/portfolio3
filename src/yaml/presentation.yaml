@@ -1,3 +1,13 @@
+- title: "型付きで行うVSCode拡張機能開発 / VSCode Meetup #31"
+  tags: []
+  ref: https://speakerdeck.com/mazrean/vscode-meetup-31
+  embed: >
+    <iframe id="talk_frame_1251267" class="speakerdeck-iframe"
+    src="//speakerdeck.com/player/97908491a4fd4fd7ab7f74f9bb6b02ad" width="100%"
+    style="aspect-ratio: 710 / 399;" frameborder="0" allowtransparency="true"
+    allowfullscreen="allowfullscreen"></iframe>
+  image: d45aaa10-56e0-460c-ba75-a05550ce9ff9
+  date: 2024/09/28
 - title: multipart/form-dataの省メモリパース / Go Conference 2024 Pre Party
   tags:
     - Go
