@@ -1,5 +1,7 @@
 - title: "型付きで行うVSCode拡張機能開発 / VSCode Meetup #31"
-  tags: []
+  tags:
+    - VSCode
+    - TypeScript
   ref: https://speakerdeck.com/mazrean/vscode-meetup-31
   embed: >
     <iframe id="talk_frame_1251267" class="speakerdeck-iframe"
