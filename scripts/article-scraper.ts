@@ -19,7 +19,7 @@ const rssPromises = rssList.map(async rss =>
   (async () => {
     const res = await fetch(rss)
     const $ = cheerio.load(await res.text(), { xmlMode: true })
-    return $('item')
+    const rssItems = $('item')
       .map((_, el) => {
         return {
           title: $(el).find('title').text(),
@@ -29,6 +29,17 @@ const rssPromises = rssList.map(async rss =>
       })
       .get()
       .reverse()
+    const atomItems = $('entry')
+      .map((_, el) => {
+        return {
+          title: $(el).find('title').text(),
+          link: $(el).find('link').attr('href') ?? $(el).find('url').text(),
+          pubDate: $(el).find('published').text()
+        }
+      })
+      .get()
+      .reverse()
+    return [...rssItems, ...atomItems]
   })()
 )
 
