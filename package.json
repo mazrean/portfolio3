@@ -22,7 +22,7 @@
     "@iconify/iconify": "^3.1.1",
     "@iconify/tools": "^4.1.1",
     "@types/alpinejs": "^3.13.11",
-    "alpinejs": "^3.14.7",
+    "alpinejs": "^3.14.8",
     "astro": "^4.16.14",
     "cheerio": "^1.0.0-rc.12",
     "rehype-katex": "^7.0.1",
@@ -33,7 +33,7 @@
     "yaml": "^2.6.1"
   },
   "devDependencies": {
-    "@iconify-json/devicon": "^1.2.9",
+    "@iconify-json/devicon": "^1.2.11",
     "@rollup/plugin-yaml": "^4.1.2",
     "@typescript-eslint/eslint-plugin": "^7.12.0",
     "@typescript-eslint/parser": "^7.13.1",
