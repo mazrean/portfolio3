@@ -6,11 +6,11 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
-    "lint": "eslint --cache --ext .ts,.astro src",
+    "lint": "eslint --cache .",
     "type-check": "astro sync && tsc",
-    "gen:webp": "esno ./scripts/webp-converter.ts",
-    "gen:presentation": "esno ./scripts/presentation-scraper.ts",
-    "gen:article": "esno ./scripts/article-scraper.ts",
+    "gen:webp": "tsx ./scripts/webp-converter.ts",
+    "gen:presentation": "tsx ./scripts/presentation-scraper.ts",
+    "gen:article": "tsx ./scripts/article-scraper.ts",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -42,8 +42,9 @@
     "eslint-plugin-astro": "^1.3.1",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-prettier": "^5.2.1",
-    "esno": "^4.8.0",
+    "globals": "^15.14.0",
     "prettier": "^3.4.2",
-    "prettier-plugin-astro": "^0.14.1"
+    "prettier-plugin-astro": "^0.14.1",
+    "tsx": "^4.19.2"
   }
 }
