@@ -15,7 +15,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/alpinejs": "^0.4.1",
+    "@astrojs/alpinejs": "^0.4.3",
     "@astrojs/check": "^0.9.4",
     "@fontsource/inter": "^5.1.1",
     "@fontsource/noto-sans-jp": "^5.1.1",
