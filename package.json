@@ -15,7 +15,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/alpinejs": "^0.4.4",
+    "@astrojs/alpinejs": "^0.4.5",
     "@astrojs/check": "^0.9.4",
     "@fontsource/inter": "^5.1.1",
     "@fontsource/noto-sans-jp": "^5.2.5",
@@ -30,10 +30,10 @@
     "satori": "^0.12.2",
     "sharp": "^0.33.5",
     "typescript": "^5.8.2",
-    "yaml": "^2.7.0"
+    "yaml": "^2.7.1"
   },
   "devDependencies": {
-    "@iconify-json/devicon": "^1.2.22",
+    "@iconify-json/devicon": "^1.2.23",
     "@rollup/plugin-yaml": "^4.1.2",
     "@typescript-eslint/eslint-plugin": "^8.28.0",
     "@typescript-eslint/parser": "^8.28.0",
