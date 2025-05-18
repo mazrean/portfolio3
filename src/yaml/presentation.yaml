@@ -1,3 +1,13 @@
+- title: "テンプレートエンジンとして使うPHP / phponshu #4"
+  tags: []
+  ref: https://speakerdeck.com/mazrean/phponshu-number-4
+  embed: >
+    <iframe id="talk_frame_1370607" class="speakerdeck-iframe"
+    src="//speakerdeck.com/player/78cf380338ca424dae10ef319c787f7f" width="100%"
+    style="aspect-ratio: 710 / 399;" frameborder="0" allowtransparency="true"
+    allowfullscreen="allowfullscreen"></iframe>
+  image: c8db2082-782f-498b-b929-e09512ea0e4f
+  date: 2025/05/17
 - title: "型付きで行うVSCode拡張機能開発 / VSCode Meetup #31"
   tags:
     - VSCode
