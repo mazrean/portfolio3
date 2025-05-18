@@ -1,5 +1,6 @@
 - title: "テンプレートエンジンとして使うPHP / phponshu #4"
-  tags: []
+  tags:
+    - PHP
   ref: https://speakerdeck.com/mazrean/phponshu-number-4
   embed: >
     <iframe id="talk_frame_1370607" class="speakerdeck-iframe"
