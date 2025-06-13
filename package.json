@@ -24,7 +24,7 @@
     "@types/alpinejs": "^3.13.11",
     "alpinejs": "^3.14.9",
     "astro": "^4.16.14",
-    "cheerio": "^1.0.0-rc.12",
+    "cheerio": "^1.1.0",
     "rehype-katex": "^7.0.1",
     "remark-math": "^6.0.0",
     "satori": "^0.15.2",
