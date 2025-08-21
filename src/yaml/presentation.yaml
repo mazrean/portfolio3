@@ -1,3 +1,16 @@
+- title: "KessokuでDIでもgoroutineを活用する / Go Connect #6"
+  tags:
+    - Go
+    - Dependency Injection
+    - Tool
+  ref: https://speakerdeck.com/mazrean/go-connect-6
+  embed: >
+    <iframe id="talk_frame_1425898" class="speakerdeck-iframe"
+    src="//speakerdeck.com/player/a2a52aadd7b9419b865e1e01bf4e9331" width="100%"
+    style="aspect-ratio: 710 / 399;" frameborder="0" allowtransparency="true"
+    allowfullscreen="allowfullscreen"></iframe>
+  image: 73d6c21f-ba86-41f3-82f0-8cf1de053c12
+  date: 2025/08/19
 - title: "テンプレートエンジンとして使うPHP / phponshu #4"
   tags:
     - PHP
