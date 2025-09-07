@@ -1,5 +1,7 @@
 - title: "実用的なGOCACHEPROG実装をするために / golang.tokyo #40"
-  tags: []
+  tags:
+    - Go
+    - Tool
   ref: https://speakerdeck.com/mazrean/golang-tokyo-40
   embed: >
     <iframe id="talk_frame_1432157" class="speakerdeck-iframe"
