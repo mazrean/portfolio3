@@ -15,10 +15,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/alpinejs": "^0.4.8",
+    "@astrojs/alpinejs": "^0.4.9",
     "@astrojs/check": "^0.9.4",
     "@fontsource/inter": "^5.2.6",
-    "@fontsource/noto-sans-jp": "^5.2.6",
+    "@fontsource/noto-sans-jp": "^5.2.7",
     "@iconify/iconify": "^3.1.1",
     "@iconify/tools": "^4.1.2",
     "@types/alpinejs": "^3.13.11",
@@ -33,7 +33,7 @@
     "yaml": "^2.8.1"
   },
   "devDependencies": {
-    "@iconify-json/devicon": "^1.2.42",
+    "@iconify-json/devicon": "^1.2.43",
     "@rollup/plugin-yaml": "^4.1.2",
     "@typescript-eslint/eslint-plugin": "^8.40.0",
     "@typescript-eslint/parser": "^8.32.1",
