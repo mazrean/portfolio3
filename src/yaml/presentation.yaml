@@ -1,5 +1,7 @@
 - title: "KessokuのDIにおけるgoroutineスケジューリング / golang.tokyo #41"
-  tags: []
+  tags:
+    - Go
+    - Tool
   ref: https://speakerdeck.com/mazrean/golang-dot-tokyo-41
   embed: >
     <iframe id="talk_frame_1444719" class="speakerdeck-iframe"
@@ -9,7 +11,9 @@
   image: 878f126f-746a-4cda-8064-8b130f6678ea
   date: 2025/09/29
 - title: 作って理解するGOCACHEPROG / Go Conference 2025(Workshop)
-  tags: []
+  tags:
+    - Go
+    - Tool
   ref: https://speakerdeck.com/mazrean/go-conference-2025-workshop
   embed: >
     <iframe id="talk_frame_1444227" class="speakerdeck-iframe"
