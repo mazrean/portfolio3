@@ -1,3 +1,27 @@
+- title: "KessokuのDIにおけるgoroutineスケジューリング / golang.tokyo #41"
+  tags:
+    - Go
+    - Tool
+  ref: https://speakerdeck.com/mazrean/golang-dot-tokyo-41
+  embed: >
+    <iframe id="talk_frame_1444719" class="speakerdeck-iframe"
+    src="//speakerdeck.com/player/affeef4b70904048b8a450761b706630" width="100%"
+    style="aspect-ratio: 710 / 399;" frameborder="0" allowtransparency="true"
+    allowfullscreen="allowfullscreen"></iframe>
+  image: 878f126f-746a-4cda-8064-8b130f6678ea
+  date: 2025/09/29
+- title: 作って理解するGOCACHEPROG / Go Conference 2025(Workshop)
+  tags:
+    - Go
+    - Tool
+  ref: https://speakerdeck.com/mazrean/go-conference-2025-workshop
+  embed: >
+    <iframe id="talk_frame_1444227" class="speakerdeck-iframe"
+    src="//speakerdeck.com/player/af596c50ee544522bbeed8bab595b95d" width="100%"
+    style="aspect-ratio: 710 / 399;" frameborder="0" allowtransparency="true"
+    allowfullscreen="allowfullscreen"></iframe>
+  image: 715d2b57-b4ba-42ce-a751-daa0f3307d0a
+  date: 2025/09/27
 - title: "実用的なGOCACHEPROG実装をするために / golang.tokyo #40"
   tags:
     - Go
