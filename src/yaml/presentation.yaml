@@ -1,3 +1,24 @@
+- title: "GC25 Recap: The Code You Reviewed is Not the Code You Built /
+    #newt_gophercon_tour"
+  tags: []
+  ref: https://speakerdeck.com/mazrean/number-newt-gophercon-tour
+  embed: >
+    <iframe id="talk_frame_1453141" class="speakerdeck-iframe"
+    src="//speakerdeck.com/player/dc0e3eb1cb0e4534bae7d9532bd65521" width="100%"
+    style="aspect-ratio: 710 / 399;" frameborder="0" allowtransparency="true"
+    allowfullscreen="allowfullscreen"></iframe>
+  image: 42c7e064-40b2-468e-a31a-90f499438df0
+  date: 2025/10/17
+- title: 社会人になっても趣味開発を続けたい！ / traPavilion
+  tags: []
+  ref: https://speakerdeck.com/mazrean/trapavilion
+  embed: >
+    <iframe id="talk_frame_1450994" class="speakerdeck-iframe"
+    src="//speakerdeck.com/player/2dbe536b8ded4d7e8a1c410684409d0b" width="100%"
+    style="aspect-ratio: 710 / 399;" frameborder="0" allowtransparency="true"
+    allowfullscreen="allowfullscreen"></iframe>
+  image: d27bf280-4cc0-4683-8971-5f7b36000731
+  date: 2025/10/13
 - title: "KessokuのDIにおけるgoroutineスケジューリング / golang.tokyo #41"
   tags:
     - Go
