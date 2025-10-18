@@ -1,6 +1,9 @@
 - title: "GC25 Recap: The Code You Reviewed is Not the Code You Built /
     #newt_gophercon_tour"
-  tags: []
+  tags:
+    - Go
+    - GopherCon
+    - Recap
   ref: https://speakerdeck.com/mazrean/number-newt-gophercon-tour
   embed: >
     <iframe id="talk_frame_1453141" class="speakerdeck-iframe"
@@ -10,7 +13,8 @@
   image: 42c7e064-40b2-468e-a31a-90f499438df0
   date: 2025/10/17
 - title: 社会人になっても趣味開発を続けたい！ / traPavilion
-  tags: []
+  tags:
+    - traP
   ref: https://speakerdeck.com/mazrean/trapavilion
   embed: >
     <iframe id="talk_frame_1450994" class="speakerdeck-iframe"
