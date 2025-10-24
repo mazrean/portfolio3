@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.9",
-    "@astrojs/check": "^0.9.4",
+    "@astrojs/check": "^0.9.5",
     "@fontsource/inter": "^5.2.8",
     "@fontsource/noto-sans-jp": "^5.2.8",
     "@iconify/iconify": "^3.1.1",
