@@ -35,7 +35,7 @@
   "devDependencies": {
     "@iconify-json/devicon": "^1.2.51",
     "@rollup/plugin-yaml": "^4.1.2",
-    "@typescript-eslint/eslint-plugin": "^8.46.2",
+    "@typescript-eslint/eslint-plugin": "^8.49.0",
     "@typescript-eslint/parser": "^8.48.1",
     "eslint": "^9.38.0",
     "eslint-config-prettier": "^10.1.8",
