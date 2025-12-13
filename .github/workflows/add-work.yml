@@ -52,6 +52,6 @@ jobs:
           git push -f origin "$BRANCH"
           TITLE="WORKS: ${{ inputs.name }}"
           gh pr close "$BRANCH" || true
-          gh pr create -B "${{ github.ref_name }}" -t "$TITLE"
+          gh pr create -B "${{ github.ref_name }}" -t "$TITLE" -b "Automatically added work '${{ inputs.name }}'"
         env:
           GH_TOKEN: ${{ github.token }}
