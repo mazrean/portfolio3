@@ -7,9 +7,13 @@ on:
         description: "Work name to add"
         required: true
         type: string
-      github_url:
-        description: "GitHub repo URL (https://github.com/<owner>/<repo>)"
+      url:
+        description: "URL (GitHub, website, etc.)"
         required: true
+        type: string
+      ogp_url:
+        description: "OGP image URL (optional; if GitHub repo, auto-detected)"
+        required: false
         type: string
 
 permissions:
@@ -32,7 +36,7 @@ jobs:
         run: npm ci
 
       - name: Run add-work script
-        run: npm run add:work -- "${{ inputs.name }}" "${{ inputs.github_url }}"
+        run: npm run add:work -- "${{ inputs.name }}" "${{ inputs.url }}" "${{ inputs.ogp_url }}"
 
       - name: Generate WebP images
         run: npm run gen:webp
