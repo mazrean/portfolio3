@@ -1,3 +1,13 @@
+- name: kessoku
+  tags:
+    - Go
+    - Dependency Injection
+    - Library
+  ref: https://github.com/mazrean/kessoku
+  image: kessoku-1765628513298
+  description: |
+    Go言語のDIツールです。
+    Goで記述した設定を基にDIコードを生成するツールで、並行処理でDIすることで起動速度を向上できるのが特徴です。
 - name: GenORM
   tags:
     - Go
