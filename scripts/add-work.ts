@@ -140,9 +140,9 @@ async function main() {
           .replace(/\s+/g, '-')
           .replace(/[^a-z0-9-]/g, '');
         const timestamp = Date.now();
-        const ext = ogpUrl.includes('.png') ? 'png' : 'jpg';
-        imageName = `${slugName}-${timestamp}.${ext}`;
-        const imagePath = path.join(worksDir, imageName);
+        const ext = path.extname(new URL(ogpUrl).pathname).split('?')[0] || '.png';
+        imageName = `${slugName}-${timestamp}`;
+        const imagePath = path.join(worksDir, `${imageName}${ext}`);
 
         console.log(`Downloading OGP image from ${ogpUrl}...`);
         await downloadImage(ogpUrl, imagePath);
