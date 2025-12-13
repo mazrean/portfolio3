@@ -8,7 +8,7 @@ const localCollection = (
 ).export()
 
 // Cache for loaded icon sets
-const iconSets = new Map()
+const iconSets = new Map<string, any>()
 
 async function loadIconSet(collection: string) {
   if (iconSets.has(collection)) {
@@ -18,8 +18,11 @@ async function loadIconSet(collection: string) {
   try {
     // Try to load the icon set from @iconify-json/*
     const iconSet = await import(`@iconify-json/${collection}`)
-    iconSets.set(collection, iconSet.icons)
-    return iconSet.icons
+    if (iconSet && iconSet.icons) {
+      iconSets.set(collection, iconSet.icons)
+      return iconSet.icons
+    }
+    return null
   } catch {
     return null
   }
@@ -32,8 +35,9 @@ export const getIconSvg = async (icon: string) => {
   }
 
   // Try to load from installed icon sets
-  const [collection, iconName] = icon.split(':')
-  if (collection && iconName) {
+  const parts = icon.split(':', 2)
+  if (parts.length === 2) {
+    const [collection, iconName] = parts
     const iconSet = await loadIconSet(collection)
     if (iconSet) {
       iconData = getIconData(iconSet, iconName)
