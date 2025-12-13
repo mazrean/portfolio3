@@ -1,0 +1,55 @@
+name: Add Work and Generate WebP
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "Work name to add"
+        required: true
+        type: string
+      url:
+        description: "URL (GitHub, website, etc.)"
+        required: true
+        type: string
+      ogp_url:
+        description: "OGP image URL (optional; if GitHub repo, auto-detected)"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  add-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run add-work script
+        run: npm run add:work -- "${{ inputs.name }}" "${{ inputs.url }}" "${{ inputs.ogp_url }}"
+
+      - name: Generate WebP images
+        run: npm run gen:webp
+
+      - name: Create PR
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          BRANCH="auto/add-work-${{ github.run_id }}"
+          git checkout -b "$BRANCH"
+          git add -A
+          git commit -m "chore(work): add '${{ inputs.name }}' and generate webp"
+          git push -f origin "$BRANCH"
+          TITLE="WORKS: ${{ inputs.name }}"
+          gh pr close ${{ env.BRANCH }} || true
+          gh pr create -B ${{ github.ref_name }} -t "$TITLE"
