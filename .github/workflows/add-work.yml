@@ -51,5 +51,5 @@ jobs:
           git commit -m "chore(work): add '${{ inputs.name }}' and generate webp"
           git push -f origin "$BRANCH"
           TITLE="WORKS: ${{ inputs.name }}"
-          gh pr close ${{ env.BRANCH }} || true
+          gh pr close "$BRANCH" || true
           gh pr create -B ${{ github.ref_name }} -t "$TITLE"
