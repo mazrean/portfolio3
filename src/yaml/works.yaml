@@ -1,3 +1,8 @@
+- name: kessoku
+  tags: []
+  ref: https://github.com/mazrean/kessoku
+  image: kessoku-1765627092830.jpg
+  description: ""
 - name: GenORM
   tags:
     - Go
