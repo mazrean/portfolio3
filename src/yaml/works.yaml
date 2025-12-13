@@ -1,111 +1,159 @@
 - name: GenORM
-  tags: [ Go, ORM, Library ]
+  tags:
+    - Go
+    - ORM
+    - Library
   ref: https://github.com/mazrean/genorm
   image: genorm
   description: |
     Go言語のSQL Builderです。
     1.18で入ったジェネリクスを利用して、型による制約でバグを防止するのが特徴です。
 - name: FormStream
-  tags: [ Go, Library ]
+  tags:
+    - Go
+    - Library
   ref: https://github.com/mazrean/formstream
   image: formstream
   description: |
     Go言語のmultipart/form-dataのパーサーライブラリです。
     可能な限りストリーム処理することで、省メモリかつ高速なのが特徴です。
 - name: isucrud
-  tags: [ Go, ISUCON, Static Analysis, Tool ]
+  tags:
+    - Go
+    - ISUCON
+    - Static Analysis
+    - Tool
   ref: https://github.com/mazrean/isucrud
   image: isucrud
   description: |
     ISUCON用のDBの各テーブルへのCRUDを可視化することで、キャッシュすべき箇所の判断を助けるツールです。 
 - name: traP Collection
-  tags: [ Go, traP ]
+  tags:
+    - Go
+    - traP
   ref: https://trap.jp/post/1815/
   image: trap-collection
   description: |
     traPで開発したゲームの管理・展示・販売を行うゲームランチャーです。
     コミケで販売しています。
 - name: ssh-separator
-  tags: [ Go, Docker, CTF ]
+  tags:
+    - Go
+    - Docker
+    - CTF
   ref: https://trap.jp/post/1343/
   image: ssh-separator
   description: |
     ssh接続をユーザーごとに用意したDockerコンテナへ振り分けるアプリケーションです。
     traPで行う初心者向けCTFイベントのために作成しました。
 - name: One Poll
-  tags: [ Go, Vue.js, WebAuthn ]
+  tags:
+    - Go
+    - Vue.js
+    - WebAuthn
   ref: https://one-poll.mazrean.com/
   image: one-poll
   description: |
     1操作で大半の操作が完結する気軽な投票アプリケーションです。
     WebAuthnに対応し、認証も簡単に行えます。
 - name: 重Book
-  tags: [ Go, Vue.js, Cloudflare Workers ]
+  tags:
+    - Go
+    - Vue.js
+    - Cloudflare Workers
   ref: https://cho-book.mazrean.com/
   image: cho-book
   description: |
     バーコードを読み取り本を管理することで、本の重複購入を防止するアプリケーションです。
     CDNのキャッシュとエッジワーカーを活用し、軽い動作を実現しています。
 - name: iwrapper
-  tags: [ Go, Static Analysis, Tool ]
+  tags:
+    - Go
+    - Static Analysis
+    - Tool
   ref: https://github.com/mazrean/iwrapper/
   image: iwrapper
   description: |
     Goのembeddedを使いinterfaceのラッパーを作ると、ラップ前と型アサーションの結果が変わってしまいます。
     これを防止するコードを生成するツールです。
 - name: portfolio(3代目)
-  tags: [ Astro.js, Alpine.js, Cloudflare ]
+  tags:
+    - Astro.js
+    - Alpine.js
+    - Cloudflare
   ref: https://mazrean.com
   image: portfolio3
   description: |
     Astro.jsとAlpine.jsを使って作成したブログ機能付きのポートフォリオサイトです。
     SSGによりパフォーマンスを向上させつつ、依存を削減しメンテナンス性を向上させています。
 - name: isucon-go-tools
-  tags: [ Go, ISUCON, Static Analysis, Tool]
+  tags:
+    - Go
+    - ISUCON
+    - Static Analysis
+    - Tool
   ref: https://github.com/mazrean/isucon-go-tools
   image: isucon-go-tools
   description: |
     ISUCON用のutilityと、計測機器の導入などの変更を行うコード書き換えツールです。
 - name: isuginx
-  tags: [ Go, ISUCON, Nginx, Tool ]
+  tags:
+    - Go
+    - ISUCON
+    - Nginx
+    - Tool
   ref: https://github.com/mazrean/isuginx
   image: isuginx
   description: |
     ISUCON用のNginxの設定ファイルへ秘伝のたれの流し込みを行うツールです。
 - name: go-clone-detection
-  tags: [ Go, Static Analysis, Tool ]
+  tags:
+    - Go
+    - Static Analysis
+    - Tool
   ref: https://github.com/mazrean/go-clone-detection
   image: go-clone-detection
   description: |
     Goのソースコードのクローン検出(類似コード検出)を行う静的解析ツールです。
 - name: toy-git
-  tags: [ Rust, Git ]
+  tags:
+    - Rust
+    - Git
   ref: https://github.com/mazrean/toy-git
   image: toy-git
   description: |
     Gitコマンドの一部機能をRustで実装したツールです。
     標準ライブラリのみで1から実装しています。
 - name: go-feature-envy
-  tags: [ Go, Static Analysis, Tool ]
+  tags:
+    - Go
+    - Static Analysis
+    - Tool
   ref: https://github.com/mazrean/go-feature-envy
   image: go-feature-envy
   description: |
     GoのソースコードからFeature Envy(外部モジュールへの過剰な依存による凝集度の低下)を検出する静的解析ツールです。
 - name: Yuri-Bot
-  tags: [ Go, traP, RSS ]
+  tags:
+    - Go
+    - traP
+    - RSS
   image: yuri-bot
   description: |
     traQでRSSを購読するためのbotです。
     記事購読の他、部内で使用しているOSSの更新通知などに利用されています。
 - name: portfolio(2代目)
-  tags: [ Svelte.js, Vercel ]
+  tags:
+    - Svelte.js
+    - Vercel
   ref: https://portfolio.mazrean.com/blog/sapper-vercel-forestry
   image: portfolio2
   description: |
     Svelte.jsを使って作成したブログ機能付きのポートフォリオサイトです。
     Sapperを使ってSSGを行っています。
 - name: portfolio(初代)
-  tags: [ Vue.js ]
+  tags:
+    - Vue.js
   image: portfolio
   description: |
     Vue.jsを使って作成したブログ機能付きのポートフォリオサイトです。

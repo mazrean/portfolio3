@@ -12,7 +12,8 @@
     "gen:presentation": "tsx ./scripts/presentation-scraper.ts",
     "gen:article": "tsx ./scripts/article-scraper.ts",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "add:work": "tsx ./scripts/add-work.ts"
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.9",
