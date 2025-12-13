@@ -53,3 +53,5 @@ jobs:
           TITLE="WORKS: ${{ inputs.name }}"
           gh pr close "$BRANCH" || true
           gh pr create -B "${{ github.ref_name }}" -t "$TITLE"
+        env:
+          GH_TOKEN: ${{ github.token }}
