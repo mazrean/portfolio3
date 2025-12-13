@@ -6,7 +6,7 @@ import tsEslintPlugin from '@typescript-eslint/eslint-plugin'
 
 export default [
   {
-    ignores: ['**/*.astro/*', '*.astro/*']
+    ignores: ['**/*.astro/*', '*.astro/*', 'dist/**']
   },
   {
     languageOptions: {
