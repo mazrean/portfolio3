@@ -1,22 +1,24 @@
-#!/usr/bin/env node
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import YAML from 'yaml';
 import * as cheerio from 'cheerio';
 
+const usageText = `Usage: npm run add:work -- "<Name>" "<URL>" "[OGP_Image_URL]"
+
+Arguments:
+    Name: The name of the work to add
+    URL: Any URL (GitHub, personal website, etc.)
+    OGP_Image_URL: (Optional) URL to the OGP/preview image to download
+
+Examples:
+    npm run add:work -- "MyProject" "https://github.com/user/repo"
+    npm run add:work -- "MyProject" "https://example.com" "https://example.com/og.png"
+    npm run add:work -- "MyProject" "https://github.com/user/repo" "https://opengraph.githubassets.com/1/user/repo"
+`;
+
 function usage() {
-  console.error('Usage: npm run add:work -- "<Name>" "<URL>" "[OGP_Image_URL]"');
-  console.error('');
-  console.error('Arguments:');
-  console.error('  Name: The name of the work to add');
-  console.error('  URL: Any URL (GitHub, personal website, etc.)');
-  console.error('  OGP_Image_URL: (Optional) URL to the OGP/preview image to download');
-  console.error('');
-  console.error('Examples:');
-  console.error('  npm run add:work -- "MyProject" "https://github.com/user/repo"');
-  console.error('  npm run add:work -- "MyProject" "https://example.com" "https://example.com/og.png"');
-  console.error('  npm run add:work -- "MyProject" "https://github.com/user/repo" "https://opengraph.githubassets.com/1/user/repo"');
+  console.error(usageText);
   process.exit(1);
 }
 
