@@ -47,6 +47,6 @@
     "globals": "^16.5.0",
     "prettier": "^3.7.4",
     "prettier-plugin-astro": "^0.14.1",
-    "tsx": "^4.20.6"
+    "tsx": "^4.21.0"
   }
 }
