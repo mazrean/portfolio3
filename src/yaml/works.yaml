@@ -1,8 +1,3 @@
-- name: conoha-wallpaper-scraper
-  tags: []
-  ref: https://github.com/mazrean/conoha-wallpaper-scraper
-  image: conoha-wallpaper-scraper-1766227230840
-  description: ""
 - name: kessoku
   tags:
     - Go
@@ -61,6 +56,15 @@
   description: |
     ssh接続をユーザーごとに用意したDockerコンテナへ振り分けるアプリケーションです。
     traPで行う初心者向けCTFイベントのために作成しました。
+- name: ConoHa Wallpaper Scraper
+  tags:
+    - TypeScript
+    - Tool
+  ref: https://github.com/mazrean/conoha-wallpaper-scraper
+  image: conoha-wallpaper-scraper-1766227230840
+  description: |
+    美雲このはの壁紙を特定ディレクトリにダウンロードするスクリプトです。 
+    各種OSの壁紙のスライドショー機能と組み合わせて、美雲このはのスライドショーを壁紙に設定できます。
 - name: One Poll
   tags:
     - Go
