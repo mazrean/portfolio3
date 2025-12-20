@@ -1,3 +1,8 @@
+- name: conoha-wallpaper-scraper
+  tags: []
+  ref: https://github.com/mazrean/conoha-wallpaper-scraper
+  image: conoha-wallpaper-scraper-1766227230840
+  description: ""
 - name: kessoku
   tags:
     - Go
