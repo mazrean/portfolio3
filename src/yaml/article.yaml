@@ -1,3 +1,9 @@
+- title: MySQL 構築速度が24倍に！XtraBackup による劇的パフォーマンス改善 [DeNA インフラ SRE]
+  tags: []
+  ref: https://engineering.dena.com/blog/2025/12/xtrabackup-construction/
+  date: 2025/12/22
+  image: e5d1fa2d-2602-479f-8388-d702fbf15686
+  ignore: false
 - title: AIエディタEDENが拓く技術ブログ執筆の効率化
   tags:
     - LLM
