@@ -1,5 +1,8 @@
 - title: Goの言語仕様・標準ライブラリの機能提案を追うためのサイトを作った
-  tags: []
+  tags:
+    - Go
+    - Cloudflare
+    - LLM
   ref: https://zenn.dev/mazrean/articles/ea9f355d380dfd
   date: 2026/02/08
   image: 533c664d-a1dd-4ec9-931d-a9acdce051fb
