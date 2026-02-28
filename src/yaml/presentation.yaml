@@ -1,3 +1,15 @@
+- title: "Go 1.26でのsliceのメモリアロケーション最適化 / Go 1.26 リリースパーティ #go126party"
+  tags:
+    - Go
+    - DeepDive
+  ref: https://speakerdeck.com/mazrean/go126party
+  embed: >
+    <iframe id="talk_frame_1509371" class="speakerdeck-iframe"
+    src="https://speakerdeck.com/player/ba4ed41be14f40029153d3c704b76fd5"
+    width="100%" style="aspect-ratio: 710 / 399;" frameborder="0"
+    allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
+  image: 78e41b66-ce43-4a92-9ec7-486b155e977e
+  date: 2026/02/24
 - title: "GC25 Recap: The Code You Reviewed is Not the Code You Built /
     #newt_gophercon_tour"
   tags:
