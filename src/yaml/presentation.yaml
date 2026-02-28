@@ -1,5 +1,7 @@
 - title: "Go 1.26でのsliceのメモリアロケーション最適化 / Go 1.26 リリースパーティ #go126party"
-  tags: []
+  tags:
+    - Go
+    - DeepDive
   ref: https://speakerdeck.com/mazrean/go126party
   embed: >
     <iframe id="talk_frame_1509371" class="speakerdeck-iframe"
