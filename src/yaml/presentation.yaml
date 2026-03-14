@@ -1,3 +1,13 @@
+- title: "WebComponentとSSGで作る 個人開発Webフロントエンド / TechTalk #69"
+  tags: []
+  ref: https://speakerdeck.com/mazrean/techtalk-69
+  embed: >
+    <iframe id="talk_frame_1513263" class="speakerdeck-iframe"
+    src="https://speakerdeck.com/player/6aa0263d85524530bde949f658fcd5b6"
+    width="100%" style="aspect-ratio: 710 / 399;" frameborder="0"
+    allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
+  image: c28760dd-1686-4dce-9de1-0af1c40303fa
+  date: 2026/03/05
 - title: "Go 1.26でのsliceのメモリアロケーション最適化 / Go 1.26 リリースパーティ #go126party"
   tags:
     - Go
