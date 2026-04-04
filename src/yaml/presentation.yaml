@@ -1,5 +1,8 @@
 - title: "Go Proposal Weekly Digestの作り方 / Go Connect #11"
-  tags: []
+  tags:
+    - Go
+    - LLM
+    - Service
   ref: https://speakerdeck.com/mazrean/go-connect-11
   embed: >
     <iframe id="talk_frame_1518969" class="speakerdeck-iframe"
@@ -9,7 +12,9 @@
   image: 18586355-6195-45a5-a735-2b46bf5920af
   date: 2026/03/19
 - title: "WebComponentとSSGで作る 個人開発Webフロントエンド / TechTalk #69"
-  tags: []
+  tags:
+    - Web Frontend
+    - Web Component
   ref: https://speakerdeck.com/mazrean/techtalk-69
   embed: >
     <iframe id="talk_frame_1513263" class="speakerdeck-iframe"
