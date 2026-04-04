@@ -1,3 +1,23 @@
+- title: "Go Proposal Weekly Digestの作り方 / Go Connect #11"
+  tags: []
+  ref: https://speakerdeck.com/mazrean/go-connect-11
+  embed: >
+    <iframe id="talk_frame_1518969" class="speakerdeck-iframe"
+    src="https://speakerdeck.com/player/b7ebc08a5eb846f9868a85b6737f5a29"
+    width="100%" style="aspect-ratio: 710 / 399;" frameborder="0"
+    allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
+  image: 18586355-6195-45a5-a735-2b46bf5920af
+  date: 2026/03/19
+- title: "WebComponentとSSGで作る 個人開発Webフロントエンド / TechTalk #69"
+  tags: []
+  ref: https://speakerdeck.com/mazrean/techtalk-69
+  embed: >
+    <iframe id="talk_frame_1513263" class="speakerdeck-iframe"
+    src="https://speakerdeck.com/player/6aa0263d85524530bde949f658fcd5b6"
+    width="100%" style="aspect-ratio: 710 / 399;" frameborder="0"
+    allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
+  image: cc95ca05-d01f-4eca-926d-e9b6866bf290
+  date: 2026/03/05
 - title: "Go 1.26でのsliceのメモリアロケーション最適化 / Go 1.26 リリースパーティ #go126party"
   tags:
     - Go
