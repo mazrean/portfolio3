@@ -1,3 +1,13 @@
+- title: "瑠璃の宝石に学ぶ技術の声の聴き方 / 【劇場版】アニメから得た学びを発表会2026 #エンジニアニメ"
+  tags: []
+  ref: https://speakerdeck.com/mazrean/engineers-anime-2026
+  embed: >
+    <iframe id="talk_frame_1527854" class="speakerdeck-iframe"
+    src="https://speakerdeck.com/player/47d6c22d7f824779b635b28705fdf007"
+    width="100%" style="aspect-ratio: 710 / 399;" frameborder="0"
+    allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
+  image: 7e33e07a-80ba-43f6-a83e-f550b681a7a4
+  date: 2026/04/10
 - title: "Go Proposal Weekly Digestの作り方 / Go Connect #11"
   tags:
     - Go
