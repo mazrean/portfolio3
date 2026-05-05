@@ -5,8 +5,10 @@ gh = "latest"
 
 # frontend (npm-based; pnpm intentionally omitted)
 node = "lts"
-"npm:playwright" = "latest"
+"npm:@playwright/cli" = "latest"
+"npm:chrome-devtools-mcp" = "latest"
 
 # Note: claude-code / codex / other coding-agent CLIs are intentionally NOT pinned per project policy.
 # Note: Playwright MCP is intentionally NOT registered — use the Playwright CLI + the
 # `playwright-cli` Agent Skill (chosen by `mazrean/apm-plackage/frontend`).
+# Note: chrome-devtools-mcp's binary is installed for the `chrome-devtools-cli` skill.
