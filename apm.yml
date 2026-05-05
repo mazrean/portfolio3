@@ -1,0 +1,8 @@
+name: portfolio3
+version: 0.1.0
+description: Personal portfolio static site (Astro).
+
+dependencies:
+  apm:
+    - mazrean/apm-plackage/common
+    - mazrean/apm-plackage/frontend
