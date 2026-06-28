@@ -1,8 +1,13 @@
 - name: Go Proposal Weekly Digest
-  tags: []
+  tags:
+    - Go
+    - Cloudflare
+    - Website
   ref: https://go-proposal-weekly-digest.mazrean.com/
   image: go-proposal-weekly-digest-1782664433236
-  description: ""
+  description: |
+    Go 言語の機能提案(Proposal)を週次更新でまとめるサイトです。
+    要約は Claude Code Action で生成しており、Cloudflare により静的配信する構成となっています。
 - name: kessoku
   tags:
     - Go
