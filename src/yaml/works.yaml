@@ -1,8 +1,3 @@
-- name: Touch Knot
-  tags: []
-  ref: https://touch-knot.app/
-  image: ""
-  description: ""
 - name: kanata
   tags:
     - Kubernetes
@@ -23,6 +18,16 @@
   description: |
     Go 言語の機能提案(Proposal)を週次更新でまとめるサイトです。
     要約は Claude Code Action で生成しており、Cloudflare により静的配信する構成となっています。
+- name: Touch Knot
+  tags:
+    - Android
+    - NFC
+    - Cloudflare
+  ref: https://touch-knot.app/
+  image: touch-knot.webp
+  description: |
+    NFC を利用して SNS アカウントを交換できる Android アプリです。
+    Web 部分は Cloudflare を利用して構築しています。
 - name: kessoku
   tags:
     - Go
