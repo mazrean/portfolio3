@@ -1,8 +1,13 @@
 - name: kanata
-  tags: []
+  tags:
+    - Kubernetes
+    - macos
+    - Tool
   ref: https://github.com/mazrean/kanata
   image: kanata-1782664237752
-  description: ""
+  description: |
+    Apple Containerization Framework を利用して、mac 上で開発用の k8s クラスタ構築するツールです。
+    kind　に近い立ち位置ですが、docker が要らず常駐する Linux VM がいないのでメモリ消費が少ないのが特徴です。
 - name: kessoku
   tags:
     - Go
