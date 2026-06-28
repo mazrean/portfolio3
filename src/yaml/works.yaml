@@ -8,6 +8,16 @@
   description: |
     Apple Containerization Framework を利用して、mac 上で開発用の k8s クラスタ構築するツールです。
     kind に近い立ち位置ですが、docker が要らず常駐する Linux VM がいないのでメモリ消費が少ないのが特徴です。
+- name: Go Proposal Weekly Digest
+  tags:
+    - Go
+    - Cloudflare
+    - Website
+  ref: https://go-proposal-weekly-digest.mazrean.com/
+  image: go-proposal-weekly-digest-1782664433236
+  description: |
+    Go 言語の機能提案(Proposal)を週次更新でまとめるサイトです。
+    要約は Claude Code Action で生成しており、Cloudflare により静的配信する構成となっています。
 - name: kessoku
   tags:
     - Go
