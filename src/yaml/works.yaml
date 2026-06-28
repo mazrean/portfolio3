@@ -1,3 +1,8 @@
+- name: Go Proposal Weekly Digest
+  tags: []
+  ref: https://go-proposal-weekly-digest.mazrean.com/
+  image: go-proposal-weekly-digest-1782664433236
+  description: ""
 - name: kessoku
   tags:
     - Go
