@@ -24,7 +24,7 @@
     - NFC
     - Cloudflare
   ref: https://touch-knot.app/
-  image: touch-knot.webp
+  image: touch-knot
   description: |
     NFC を利用して SNS アカウントを交換できる Android アプリです。
     Web 部分は Cloudflare を利用して構築しています。
