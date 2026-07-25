@@ -1,5 +1,15 @@
+- name: dockportless
+  tags:
+    - Zig
+    - Docker
+    - Tool
+  ref: https://github.com/mazrean/dockportless
+  image: dockportless-1784988741507
+  description: |
+    Docker Compose 使用時に、localhost の URL を発行することで、同時に同じアプリケーションの開発環境を立てられるツールです。
+    AI Agent による worktree を利用した並列コーディングを主な用途として想定しています。
 - name: gh-copilot-usage
-  tags: 
+  tags:
     - Go
     - GitHub Copilot CLI
     - Tool
