@@ -1,11 +1,12 @@
 - name: gh-copilot-usage
   tags: 
     - Go
-    - GitHub Copilot
+    - GitHub Copilot CLI
     - Tool
   ref: https://github.com/mazrean/gh-copilot-usage
   image: gh-copilot-usage-1784988398280
-  description: ""
+  description: |
+    GitHub Copilot CLI で、どのモデル・セッションでどのように AI Credit が使用されたか可視化するツールです。
 - name: kanata
   tags:
     - Kubernetes
