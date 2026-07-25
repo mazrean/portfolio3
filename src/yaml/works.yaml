@@ -1,5 +1,8 @@
 - name: gh-copilot-usage
-  tags: []
+  tags: 
+    - Go
+    - GitHub Copilot
+    - Tool
   ref: https://github.com/mazrean/gh-copilot-usage
   image: gh-copilot-usage-1784988398280
   description: ""
