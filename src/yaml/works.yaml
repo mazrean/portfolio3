@@ -1,3 +1,8 @@
+- name: gh-copilot-usage
+  tags: []
+  ref: https://github.com/mazrean/gh-copilot-usage
+  image: gh-copilot-usage-1784988398280
+  description: ""
 - name: kanata
   tags:
     - Kubernetes
