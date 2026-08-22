@@ -1,3 +1,13 @@
+- title: "Go 1.27からのGODEBUG / Go 1.27 リリースパーティ #go127party"
+  tags: []
+  ref: https://speakerdeck.com/mazrean/go127party
+  embed: >
+    <iframe id="talk_frame_1582452" class="speakerdeck-iframe"
+    src="https://speakerdeck.com/player/de5f2b2bf11f4351b5999deb6f66d590"
+    width="100%" style="aspect-ratio: 710 / 399;" frameborder="0"
+    allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
+  image: 11ebb1e2-db96-403a-a06c-4c7e1e60a343
+  date: 2026/08/18
 - title: "瑠璃の宝石に学ぶ技術の声の聴き方 / 【劇場版】アニメから得た学びを発表会2026 #エンジニアニメ"
   tags:
     - Soft Skills
