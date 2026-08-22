@@ -1,5 +1,7 @@
 - title: "Go 1.27からのGODEBUG / Go 1.27 リリースパーティ #go127party"
-  tags: []
+  tags:
+    - Go
+    - DeepDive
   ref: https://speakerdeck.com/mazrean/go127party
   embed: >
     <iframe id="talk_frame_1582452" class="speakerdeck-iframe"
