@@ -1,3 +1,23 @@
+- title: "kubernetes コンポーネント開発入門 / 新卒N年目の勉強会&交流会！〜〇〇への誘い〜 #n_study"
+  tags: []
+  ref: https://speakerdeck.com/mazrean/n-study202609
+  embed: >
+    <iframe id="talk_frame_1590017" class="speakerdeck-iframe"
+    src="https://speakerdeck.com/player/ce0ff96215da42a9a70f0b7e5cc57b14"
+    width="100%" style="aspect-ratio: 710 / 399;" frameborder="0"
+    allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
+  image: 677ed18c-1fd4-4b46-844b-d6b31a3e10fe
+  date: 2026/09/03
+- title: 型解析で実現する Go の言語内 DSL / Conference に Go! タイムテーブルの歩き方 for Gophers
+  tags: []
+  ref: https://speakerdeck.com/mazrean/gocon2026-timetable
+  embed: >
+    <iframe id="talk_frame_1588408" class="speakerdeck-iframe"
+    src="https://speakerdeck.com/player/558690d9f1434eeb8b30abcb58ca995e"
+    width="100%" style="aspect-ratio: 710 / 399;" frameborder="0"
+    allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
+  image: 300b00d3-d23f-48fd-89d6-69f2d7101653
+  date: 2026/08/31
 - title: "Go 1.27からのGODEBUG / Go 1.27 リリースパーティ #go127party"
   tags:
     - Go
