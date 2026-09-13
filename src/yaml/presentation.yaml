@@ -1,5 +1,7 @@
 - title: "kubernetes コンポーネント開発入門 / 新卒N年目の勉強会&交流会！〜〇〇への誘い〜 #n_study"
-  tags: []
+  tags:
+    - Kubernetes
+    - Tool
   ref: https://speakerdeck.com/mazrean/n-study202609
   embed: >
     <iframe id="talk_frame_1590017" class="speakerdeck-iframe"
@@ -9,7 +11,9 @@
   image: 82f17283-41d4-4a2a-a569-9f5421bc175d
   date: 2026/09/03
 - title: 型解析で実現する Go の言語内 DSL / Conference に Go! タイムテーブルの歩き方 for Gophers
-  tags: []
+  tags:
+    - Go
+    - Tool
   ref: https://speakerdeck.com/mazrean/gocon2026-timetable
   embed: >
     <iframe id="talk_frame_1588408" class="speakerdeck-iframe"
