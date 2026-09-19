@@ -1,5 +1,7 @@
 - title: encoding/json/v2 を最速の JSON エンコーダ/デコーダにする
-  tags: []
+  tags:
+    - Go
+    - Tool
   ref: https://zenn.dev/mazrean/articles/27314fad0e5c73
   date: 2026/09/16
   image: c022c824-59db-4e5d-a75e-c62945781442
