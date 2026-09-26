@@ -34,10 +34,10 @@
     "yaml": "^2.9.1"
   },
   "devDependencies": {
-    "@iconify-json/devicon": "^1.2.63",
+    "@iconify-json/devicon": "^1.2.67",
     "@rollup/plugin-yaml": "^4.1.2",
     "@types/node": "^26.1.0",
-    "@typescript-eslint/eslint-plugin": "^8.70.0",
+    "@typescript-eslint/eslint-plugin": "^8.70.1",
     "@typescript-eslint/parser": "^8.65.0",
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
@@ -47,6 +47,6 @@
     "globals": "^17.6.0",
     "prettier": "^3.8.4",
     "prettier-plugin-astro": "^0.14.1",
-    "tsx": "^4.23.13"
+    "tsx": "^4.23.15"
   }
 }
