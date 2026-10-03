@@ -1,4 +1,5 @@
-- title: "kubernetes コンポーネント開発入門 / 新卒N年目の勉強会&交流会！〜〇〇への誘い〜 #n_study"
+- id: https://speakerdeck.com/mazrean/n-study202609
+  title: "kubernetes コンポーネント開発入門 / 新卒N年目の勉強会&交流会！〜〇〇への誘い〜 #n_study"
   tags:
     - Kubernetes
     - Tool
@@ -10,7 +11,8 @@
     allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
   image: 82f17283-41d4-4a2a-a569-9f5421bc175d
   date: 2026/09/03
-- title: 型解析で実現する Go の言語内 DSL / Conference に Go! タイムテーブルの歩き方 for Gophers
+- id: https://speakerdeck.com/mazrean/gocon2026-timetable
+  title: 型解析で実現する Go の言語内 DSL / Conference に Go! タイムテーブルの歩き方 for Gophers
   tags:
     - Go
     - Tool
@@ -22,7 +24,8 @@
     allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
   image: 3bb01932-71fd-4560-9616-2cea38968917
   date: 2026/08/31
-- title: "Go 1.27からのGODEBUG / Go 1.27 リリースパーティ #go127party"
+- id: https://speakerdeck.com/mazrean/go127party
+  title: "Go 1.27からのGODEBUG / Go 1.27 リリースパーティ #go127party"
   tags:
     - Go
     - DeepDive
@@ -34,7 +37,8 @@
     allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
   image: 11ebb1e2-db96-403a-a06c-4c7e1e60a343
   date: 2026/08/18
-- title: "瑠璃の宝石に学ぶ技術の声の聴き方 / 【劇場版】アニメから得た学びを発表会2026 #エンジニアニメ"
+- id: https://speakerdeck.com/mazrean/engineers-anime-2026
+  title: "瑠璃の宝石に学ぶ技術の声の聴き方 / 【劇場版】アニメから得た学びを発表会2026 #エンジニアニメ"
   tags:
     - Soft Skills
   ref: https://speakerdeck.com/mazrean/engineers-anime-2026
@@ -45,7 +49,8 @@
     allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
   image: 7e33e07a-80ba-43f6-a83e-f550b681a7a4
   date: 2026/04/10
-- title: "Go Proposal Weekly Digestの作り方 / Go Connect #11"
+- id: https://speakerdeck.com/mazrean/go-connect-11
+  title: "Go Proposal Weekly Digestの作り方 / Go Connect #11"
   tags:
     - Go
     - LLM
@@ -58,7 +63,8 @@
     allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
   image: 18586355-6195-45a5-a735-2b46bf5920af
   date: 2026/03/19
-- title: "WebComponentとSSGで作る 個人開発Webフロントエンド / TechTalk #69"
+- id: https://speakerdeck.com/mazrean/techtalk-69
+  title: "WebComponentとSSGで作る 個人開発Webフロントエンド / TechTalk #69"
   tags:
     - Web Frontend
     - Web Component
@@ -70,7 +76,8 @@
     allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
   image: cc95ca05-d01f-4eca-926d-e9b6866bf290
   date: 2026/03/05
-- title: "Go 1.26でのsliceのメモリアロケーション最適化 / Go 1.26 リリースパーティ #go126party"
+- id: https://speakerdeck.com/mazrean/go126party
+  title: "Go 1.26でのsliceのメモリアロケーション最適化 / Go 1.26 リリースパーティ #go126party"
   tags:
     - Go
     - DeepDive
@@ -82,7 +89,8 @@
     allowtransparency="true" allowfullscreen="allowfullscreen"></iframe>
   image: 78e41b66-ce43-4a92-9ec7-486b155e977e
   date: 2026/02/24
-- title: "GC25 Recap: The Code You Reviewed is Not the Code You Built /
+- id: https://speakerdeck.com/mazrean/number-newt-gophercon-tour
+  title: "GC25 Recap: The Code You Reviewed is Not the Code You Built /
     #newt_gophercon_tour"
   tags:
     - Go
@@ -96,7 +104,8 @@
     allowfullscreen="allowfullscreen"></iframe>
   image: 42c7e064-40b2-468e-a31a-90f499438df0
   date: 2025/10/17
-- title: 社会人になっても趣味開発を続けたい！ / traPavilion
+- id: https://speakerdeck.com/mazrean/trapavilion
+  title: 社会人になっても趣味開発を続けたい！ / traPavilion
   tags:
     - traP
   ref: https://speakerdeck.com/mazrean/trapavilion
@@ -107,7 +116,8 @@
     allowfullscreen="allowfullscreen"></iframe>
   image: d27bf280-4cc0-4683-8971-5f7b36000731
   date: 2025/10/13
-- title: "KessokuのDIにおけるgoroutineスケジューリング / golang.tokyo #41"
+- id: https://speakerdeck.com/mazrean/golang-dot-tokyo-41
+  title: "KessokuのDIにおけるgoroutineスケジューリング / golang.tokyo #41"
   tags:
     - Go
     - Tool
@@ -119,7 +129,8 @@
     allowfullscreen="allowfullscreen"></iframe>
   image: 878f126f-746a-4cda-8064-8b130f6678ea
   date: 2025/09/29
-- title: 作って理解するGOCACHEPROG / Go Conference 2025(Workshop)
+- id: https://speakerdeck.com/mazrean/go-conference-2025-workshop
+  title: 作って理解するGOCACHEPROG / Go Conference 2025(Workshop)
   tags:
     - Go
     - Tool
@@ -131,7 +142,8 @@
     allowfullscreen="allowfullscreen"></iframe>
   image: 715d2b57-b4ba-42ce-a751-daa0f3307d0a
   date: 2025/09/27
-- title: "実用的なGOCACHEPROG実装をするために / golang.tokyo #40"
+- id: https://speakerdeck.com/mazrean/golang-tokyo-40
+  title: "実用的なGOCACHEPROG実装をするために / golang.tokyo #40"
   tags:
     - Go
     - Tool
@@ -143,7 +155,8 @@
     allowfullscreen="allowfullscreen"></iframe>
   image: a1d13aac-1058-49e9-829d-6b145da13eaf
   date: 2025/09/01
-- title: "KessokuでDIでもgoroutineを活用する / Go Connect #6"
+- id: https://speakerdeck.com/mazrean/go-connect-6
+  title: "KessokuでDIでもgoroutineを活用する / Go Connect #6"
   tags:
     - Go
     - Dependency Injection
@@ -156,7 +169,8 @@
     allowfullscreen="allowfullscreen"></iframe>
   image: 73d6c21f-ba86-41f3-82f0-8cf1de053c12
   date: 2025/08/19
-- title: "テンプレートエンジンとして使うPHP / phponshu #4"
+- id: https://speakerdeck.com/mazrean/phponshu-number-4
+  title: "テンプレートエンジンとして使うPHP / phponshu #4"
   tags:
     - PHP
   ref: https://speakerdeck.com/mazrean/phponshu-number-4
@@ -167,7 +181,8 @@
     allowfullscreen="allowfullscreen"></iframe>
   image: c8db2082-782f-498b-b929-e09512ea0e4f
   date: 2025/05/17
-- title: "型付きで行うVSCode拡張機能開発 / VSCode Meetup #31"
+- id: https://speakerdeck.com/mazrean/vscode-meetup-31
+  title: "型付きで行うVSCode拡張機能開発 / VSCode Meetup #31"
   tags:
     - VSCode
     - TypeScript
@@ -179,7 +194,8 @@
     allowfullscreen="allowfullscreen"></iframe>
   image: d45aaa10-56e0-460c-ba75-a05550ce9ff9
   date: 2024/09/28
-- title: multipart/form-dataの省メモリパース / Go Conference 2024 Pre Party
+- id: https://speakerdeck.com/mazrean/go-conference-2024-pre-party
+  title: multipart/form-dataの省メモリパース / Go Conference 2024 Pre Party
   tags:
     - Go
     - Library
@@ -191,7 +207,8 @@
     allowfullscreen="allowfullscreen"></iframe>
   image: 714782c5-3aee-4168-b2c7-89f636459d7d
   date: 2024/06/07
-- title: インターフェースのラッパーを作る際の落とし穴 / Go Conference mini 2023
+- id: https://speakerdeck.com/mazrean/go-conference-mini-2023
+  title: インターフェースのラッパーを作る際の落とし穴 / Go Conference mini 2023
   tags:
     - Go
     - Go Conference
@@ -204,7 +221,8 @@
     style="aspect-ratio: 710 / 399;" frameborder="0" allowtransparency="true"
     allowfullscreen="allowfullscreen"></iframe>
   image: 4a673c92-cfa5-4102-8b57-6ac19ef94bb1
-- title: 発想の源としてのISUCON / ISUCON Summer Fes 2023
+- id: https://speakerdeck.com/mazrean/isucon-summer-fes-2023
+  title: 発想の源としてのISUCON / ISUCON Summer Fes 2023
   tags:
     - ISUCON
     - ISUCON Summer Fes
@@ -216,7 +234,8 @@
     style="aspect-ratio: 710 / 399;" frameborder="0" allowtransparency="true"
     allowfullscreen="allowfullscreen"></iframe>
   image: 2d17e3b3-0d1e-4d87-833b-125eeb335ebc
-- title: GenORM実装解説
+- id: trap-lt-genorm
+  title: GenORM実装解説
   tags:
     - Go
     - ORM
@@ -224,14 +243,16 @@
   ref: https://slides.mazrean.com/trap-lt/
   date: 2022/03/27
   image: trap-lt
-- title: DDDで学ぶ設計講習会
+- id: trap-lt-ddd
+  title: DDDで学ぶ設計講習会
   tags:
     - DDD
     - Software Architecture
   ref: https://slides.mazrean.com/trap-lt/
   date: 2022/01/23
   image: ddd
-- title: Dockerで作るCTF向けWebshell
+- id: https://docs.google.com/presentation/d/1xR_T3Ek6c-Vmrn_OtAhMduY9LmY9Ur3UfmlQGmaflQk/edit?usp=sharing
+  title: Dockerで作るCTF向けWebshell
   tags:
     - Go
     - Docker
@@ -239,19 +260,22 @@
   ref: https://docs.google.com/presentation/d/1xR_T3Ek6c-Vmrn_OtAhMduY9LmY9Ur3UfmlQGmaflQk/edit?usp=sharing
   date: 2021/07/14
   image: klab-lt
-- title: 鯨飼いになろう講習会2
+- id: https://docs.google.com/presentation/d/1HM-XMqqRYzRaXOuCrjj5g_rBHltY45-ly1t8D3ab8Kw/edit?usp=sharing
+  title: 鯨飼いになろう講習会2
   tags:
     - Docker
   ref: https://docs.google.com/presentation/d/1HM-XMqqRYzRaXOuCrjj5g_rBHltY45-ly1t8D3ab8Kw/edit?usp=sharing
   date: 2020/08/30
   image: docker2
-- title: 鯨飼いになろう講習会
+- id: https://docs.google.com/presentation/d/1rqxr6bcgG3Gxc6hIK8xc7nc--gbbbwP-6EnIuDZB_dQ/edit?usp=sharing
+  title: 鯨飼いになろう講習会
   tags:
     - Docker
   ref: https://docs.google.com/presentation/d/1rqxr6bcgG3Gxc6hIK8xc7nc--gbbbwP-6EnIuDZB_dQ/edit?usp=sharing
   date: 2020/08/29
   image: docker
-- title: Golang講習会
+- id: https://docs.google.com/presentation/d/1a0LlcX9WMc-m8c13dmOCtW-IcageQlHbG2ppdSppBEs/edit?usp=sharing
+  title: Golang講習会
   tags:
     - Go
   ref: https://docs.google.com/presentation/d/1a0LlcX9WMc-m8c13dmOCtW-IcageQlHbG2ppdSppBEs/edit?usp=sharing

@@ -1,4 +1,5 @@
-- name: dockportless
+- id: dockportless
+  name: dockportless
   tags:
     - Zig
     - Docker
@@ -8,7 +9,8 @@
   description: |
     Docker Compose 使用時に、localhost の URL を発行することで、同時に同じアプリケーションの開発環境を立てられるツールです。
     AI Agent による worktree を利用した並列コーディングを主な用途として想定しています。
-- name: gh-copilot-usage
+- id: gh-copilot-usage
+  name: gh-copilot-usage
   tags:
     - Go
     - GitHub Copilot CLI
@@ -17,7 +19,8 @@
   image: gh-copilot-usage-1784988398280
   description: |
     GitHub Copilot CLI で、どのモデル・セッションでどのように AI Credit が使用されたか可視化するツールです。
-- name: kanata
+- id: kanata
+  name: kanata
   tags:
     - Kubernetes
     - macos
@@ -27,7 +30,8 @@
   description: |
     Apple Containerization Framework を利用して、mac 上で開発用の k8s クラスタ構築するツールです。
     kind に近い立ち位置ですが、docker が要らず常駐する Linux VM がいないのでメモリ消費が少ないのが特徴です。
-- name: Go Proposal Weekly Digest
+- id: go-proposal-weekly-digest
+  name: Go Proposal Weekly Digest
   tags:
     - Go
     - Cloudflare
@@ -37,7 +41,8 @@
   description: |
     Go 言語の機能提案(Proposal)を週次更新でまとめるサイトです。
     要約は Claude Code Action で生成しており、Cloudflare により静的配信する構成となっています。
-- name: Touch Knot
+- id: touch-knot
+  name: Touch Knot
   tags:
     - Android
     - NFC
@@ -47,7 +52,8 @@
   description: |
     NFC を利用して SNS アカウントを交換できる Android アプリです。
     Web 部分は Cloudflare を利用して構築しています。
-- name: kessoku
+- id: kessoku
+  name: kessoku
   tags:
     - Go
     - Dependency Injection
@@ -57,7 +63,8 @@
   description: |
     Go言語のDIツールです。
     Goで記述した設定を基にDIコードを生成するツールで、並行処理でDIすることで起動速度を向上できるのが特徴です。
-- name: GenORM
+- id: genorm
+  name: GenORM
   tags:
     - Go
     - ORM
@@ -67,7 +74,8 @@
   description: |
     Go言語のSQL Builderです。
     1.18で入ったジェネリクスを利用して、型による制約でバグを防止するのが特徴です。
-- name: FormStream
+- id: formstream
+  name: FormStream
   tags:
     - Go
     - Library
@@ -76,7 +84,8 @@
   description: |
     Go言語のmultipart/form-dataのパーサーライブラリです。
     可能な限りストリーム処理することで、省メモリかつ高速なのが特徴です。
-- name: isucrud
+- id: isucrud
+  name: isucrud
   tags:
     - Go
     - ISUCON
@@ -86,7 +95,8 @@
   image: isucrud
   description: |
     ISUCON用のDBの各テーブルへのCRUDを可視化することで、キャッシュすべき箇所の判断を助けるツールです。 
-- name: traP Collection
+- id: trap-collection
+  name: traP Collection
   tags:
     - Go
     - traP
@@ -95,7 +105,8 @@
   description: |
     traPで開発したゲームの管理・展示・販売を行うゲームランチャーです。
     コミケで販売しています。
-- name: ssh-separator
+- id: ssh-separator
+  name: ssh-separator
   tags:
     - Go
     - Docker
@@ -105,7 +116,8 @@
   description: |
     ssh接続をユーザーごとに用意したDockerコンテナへ振り分けるアプリケーションです。
     traPで行う初心者向けCTFイベントのために作成しました。
-- name: ConoHa Wallpaper Scraper
+- id: conoha-wallpaper-scraper
+  name: ConoHa Wallpaper Scraper
   tags:
     - TypeScript
     - Tool
@@ -114,7 +126,8 @@
   description: |
     美雲このはの壁紙を特定ディレクトリにダウンロードするスクリプトです。 
     各種OSの壁紙のスライドショー機能と組み合わせて、美雲このはのスライドショーを壁紙に設定できます。
-- name: One Poll
+- id: one-poll
+  name: One Poll
   tags:
     - Go
     - Vue.js
@@ -124,7 +137,8 @@
   description: |
     1操作で大半の操作が完結する気軽な投票アプリケーションです。
     WebAuthnに対応し、認証も簡単に行えます。
-- name: 重Book
+- id: jubook
+  name: 重Book
   tags:
     - Go
     - Vue.js
@@ -134,7 +148,8 @@
   description: |
     バーコードを読み取り本を管理することで、本の重複購入を防止するアプリケーションです。
     CDNのキャッシュとエッジワーカーを活用し、軽い動作を実現しています。
-- name: iwrapper
+- id: iwrapper
+  name: iwrapper
   tags:
     - Go
     - Static Analysis
@@ -144,7 +159,8 @@
   description: |
     Goのembeddedを使いinterfaceのラッパーを作ると、ラップ前と型アサーションの結果が変わってしまいます。
     これを防止するコードを生成するツールです。
-- name: portfolio(3代目)
+- id: portfolio3
+  name: portfolio(3代目)
   tags:
     - Astro.js
     - Alpine.js
@@ -154,7 +170,8 @@
   description: |
     Astro.jsとAlpine.jsを使って作成したブログ機能付きのポートフォリオサイトです。
     SSGによりパフォーマンスを向上させつつ、依存を削減しメンテナンス性を向上させています。
-- name: isucon-go-tools
+- id: isucon-go-tools
+  name: isucon-go-tools
   tags:
     - Go
     - ISUCON
@@ -164,7 +181,8 @@
   image: isucon-go-tools
   description: |
     ISUCON用のutilityと、計測機器の導入などの変更を行うコード書き換えツールです。
-- name: isuginx
+- id: isuginx
+  name: isuginx
   tags:
     - Go
     - ISUCON
@@ -174,7 +192,8 @@
   image: isuginx
   description: |
     ISUCON用のNginxの設定ファイルへ秘伝のたれの流し込みを行うツールです。
-- name: go-clone-detection
+- id: go-clone-detection
+  name: go-clone-detection
   tags:
     - Go
     - Static Analysis
@@ -183,7 +202,8 @@
   image: go-clone-detection
   description: |
     Goのソースコードのクローン検出(類似コード検出)を行う静的解析ツールです。
-- name: toy-git
+- id: toy-git
+  name: toy-git
   tags:
     - Rust
     - Git
@@ -192,7 +212,8 @@
   description: |
     Gitコマンドの一部機能をRustで実装したツールです。
     標準ライブラリのみで1から実装しています。
-- name: go-feature-envy
+- id: go-feature-envy
+  name: go-feature-envy
   tags:
     - Go
     - Static Analysis
@@ -201,7 +222,8 @@
   image: go-feature-envy
   description: |
     GoのソースコードからFeature Envy(外部モジュールへの過剰な依存による凝集度の低下)を検出する静的解析ツールです。
-- name: Yuri-Bot
+- id: yuri-bot
+  name: Yuri-Bot
   tags:
     - Go
     - traP
@@ -210,7 +232,8 @@
   description: |
     traQでRSSを購読するためのbotです。
     記事購読の他、部内で使用しているOSSの更新通知などに利用されています。
-- name: portfolio(2代目)
+- id: portfolio2
+  name: portfolio(2代目)
   tags:
     - Svelte.js
     - Vercel
@@ -219,7 +242,8 @@
   description: |
     Svelte.jsを使って作成したブログ機能付きのポートフォリオサイトです。
     Sapperを使ってSSGを行っています。
-- name: portfolio(初代)
+- id: portfolio1
+  name: portfolio(初代)
   tags:
     - Vue.js
   image: portfolio

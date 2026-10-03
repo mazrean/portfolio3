@@ -110,6 +110,22 @@ async function main() {
       throw new Error('works.yaml is not a YAML array as expected')
     }
 
+    // Generate a slug from the work name, used for the entry id and image filename
+    const slugName = nameArg
+      .toLowerCase()
+      .replace(/\s+/g, '-')
+      .replace(/[^a-z0-9-]/g, '')
+
+    // Content collection entries require a unique id
+    const existingIds = new Set(
+      doc.map(entry => (entry as { id?: unknown }).id)
+    )
+    const baseId = slugName || 'work'
+    let id = baseId
+    for (let i = 2; existingIds.has(id); i++) {
+      id = `${baseId}-${i}`
+    }
+
     // Determine OGP image URL
     let ogpUrl: string | null = ogpUrlArg
     if (!ogpUrl) {
@@ -127,10 +143,6 @@ async function main() {
     if (ogpUrl) {
       try {
         // Generate a unique filename: use work name slugified + timestamp
-        const slugName = nameArg
-          .toLowerCase()
-          .replace(/\s+/g, '-')
-          .replace(/[^a-z0-9-]/g, '')
         const timestamp = Date.now()
         const ext =
           path.extname(new URL(ogpUrl).pathname).split('?')[0] || '.png'
@@ -149,6 +161,7 @@ async function main() {
 
     // Build new entry object
     const newEntry = {
+      id,
       name: nameArg,
       tags: [],
       ref: refUrl,

@@ -65,9 +65,6 @@ importers:
       '@iconify-json/devicon':
         specifier: ^1.2.68
         version: 1.2.68
-      '@rollup/plugin-yaml':
-        specifier: ^5.0.0
-        version: 5.0.0(rollup@4.64.0)
       '@types/node':
         specifier: ^26.1.0
         version: 26.6.4
@@ -1127,15 +1124,6 @@ packages:
   '@pkgr/core@0.3.6':
     resolution: {integrity: sha512-SEeaJLb3qBNF/OaXnaR1NmmBbFYk1zC0ZH/52fATcRPLFg/p791YrcyFFy44Bo9sLaGuSuLp5Q6axbb/O+v/RA==}
     engines: {node: ^14.18.0 || >=16.0.0}
-
-  '@rollup/plugin-yaml@5.0.0':
-    resolution: {integrity: sha512-9XOiRGYJjDwmEwR15kuxw+RytZFKtEWshoXuITrtS6+57BVMQMzDfhmSO/xfQOAY5psQv1IrxhQTUqPNppe4lQ==}
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      rollup: ^2.78.0||^3.0.0||^4.0.0
-    peerDependenciesMeta:
-      rollup:
-        optional: true
 
   '@rollup/pluginutils@5.4.0':
     resolution: {integrity: sha512-MfPp06CjRLfXQ3wY0R8vJDYBy/MvVcc9OulEfR0B8Iv9ko+GCNaRZ+EpJYFl27LhKsZK0o420sYCRHCjfCgeUg==}
@@ -3149,10 +3137,6 @@ packages:
     resolution: {integrity: sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==}
     engines: {node: '>=12.0.0'}
 
-  tosource@2.0.0-alpha.3:
-    resolution: {integrity: sha512-KAB2lrSS48y91MzFPFuDg4hLbvDiyTjOVgaK7Erw+5AmZXNq4sFRVn8r6yxSLuNs15PaokrDRpS61ERY9uZOug==}
-    engines: {node: '>=10'}
-
   trim-lines@3.0.1:
     resolution: {integrity: sha512-kRj8B+YHZCc9kQYdWfJB2/oUl9rA99qbowYYBtr4ui4mZyAQ2JpvVBd/6U2YloATfqBhBTSMhTpgBHtU0Mf3Rg==}
 
@@ -4386,14 +4370,6 @@ snapshots:
   '@oslojs/encoding@1.1.0': {}
 
   '@pkgr/core@0.3.6': {}
-
-  '@rollup/plugin-yaml@5.0.0(rollup@4.64.0)':
-    dependencies:
-      '@rollup/pluginutils': 5.4.0(rollup@4.64.0)
-      js-yaml: 4.3.2
-      tosource: 2.0.0-alpha.3
-    optionalDependencies:
-      rollup: 4.64.0
 
   '@rollup/pluginutils@5.4.0(rollup@4.64.0)':
     dependencies:
@@ -7197,8 +7173,6 @@ snapshots:
     dependencies:
       fdir: 6.5.0(picomatch@4.0.7)
       picomatch: 4.0.7
-
-  tosource@2.0.0-alpha.3: {}
 
   trim-lines@3.0.1: {}
 

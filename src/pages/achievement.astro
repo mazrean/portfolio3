@@ -3,9 +3,13 @@ import Works from '@components/ecosystem/Works.astro'
 import Presentation from '@components/ecosystem/Presentation.astro'
 import Article from '@components/ecosystem/Article.astro'
 import Layout from '@/layouts/Layout.astro'
-import works from '@yaml/works'
-import presentation from '@yaml/presentation'
-import article from '@yaml/article'
+import { getCollection } from 'astro:content'
+
+const works = (await getCollection('works')).map(({ data }) => data)
+const presentation = (await getCollection('presentation')).map(
+  ({ data }) => data
+)
+const article = (await getCollection('article')).map(({ data }) => data)
 ---
 
 <Layout title="Achievements" location="/achievement">

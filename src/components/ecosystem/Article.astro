@@ -3,10 +3,12 @@ import Button from '@components/molecule/Button.astro'
 import Grid from '@components/molecule/Grid.astro'
 import ArticleCard from '@components/organism/ArticleCard.astro'
 import Subtitle from '@components/organism/Subtitle.astro'
-import type { Article } from '@yaml/article'
+import type { CollectionEntry } from 'astro:content'
+
+type ArticleData = CollectionEntry<'article'>['data']
 
 interface Props {
-  articleList: Article[]
+  articleList: ArticleData[]
 }
 
 const count = 6

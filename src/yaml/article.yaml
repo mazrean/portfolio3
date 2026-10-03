@@ -1,4 +1,5 @@
-- title: 原因不明のメモリ高騰を追う！GCEの「見掛け上のメモリ増加」解明による50%コスト削減 [DeNA インフラ SRE]
+- id: https://engineering.dena.com/blog/2026/10/gce-e2-memory-rightsizing/
+  title: 原因不明のメモリ高騰を追う！GCEの「見掛け上のメモリ増加」解明による50%コスト削減 [DeNA インフラ SRE]
   tags:
     - GCP
     - DeNA
@@ -6,7 +7,8 @@
   date: 2026/10/01
   image: 171b305c-a6ad-4e66-ac6d-7838e0223c09
   ignore: false
-- title: Cloudflare 上で Jev で作るほぼ0円運用可能な高品質なページ内検索
+- id: https://zenn.dev/mazrean/articles/bd9b563ace18db
+  title: Cloudflare 上で Jev で作るほぼ0円運用可能な高品質なページ内検索
   tags:
     - LLM
     - Cloudflare
@@ -14,7 +16,8 @@
   date: 2026/09/26
   image: 13b83d6e-8182-411b-9202-947509a6d850
   ignore: false
-- title: encoding/json/v2 を最速の JSON エンコーダ/デコーダにする
+- id: https://zenn.dev/mazrean/articles/27314fad0e5c73
+  title: encoding/json/v2 を最速の JSON エンコーダ/デコーダにする
   tags:
     - Go
     - Tool
@@ -22,7 +25,8 @@
   date: 2026/09/16
   image: c022c824-59db-4e5d-a75e-c62945781442
   ignore: false
-- title: NFC で SNS アカウント交換をするアプリ Touch Knot を作った
+- id: https://zenn.dev/mazrean/articles/2aff3e99cdde53
+  title: NFC で SNS アカウント交換をするアプリ Touch Knot を作った
   tags:
     - NFC
     - Android
@@ -30,7 +34,8 @@
   date: 2026/05/26
   image: a20c1264-3903-4d37-93f1-3b768bd9dfa8
   ignore: false
-- title: ISUNARABE合同演習2026に参加しました(INUCON チーム)
+- id: https://zenn.dev/mazrean/articles/27fc724fde1b88
+  title: ISUNARABE合同演習2026に参加しました(INUCON チーム)
   tags:
     - ISUCON
     - Go
@@ -38,7 +43,8 @@
   date: 2026/05/10
   image: 391e72a9-0df6-416b-a00f-c0161a7aac28
   ignore: false
-- title: Goの言語仕様・標準ライブラリの機能提案を追うためのサイトを作った
+- id: https://zenn.dev/mazrean/articles/ea9f355d380dfd
+  title: Goの言語仕様・標準ライブラリの機能提案を追うためのサイトを作った
   tags:
     - Go
     - Cloudflare
@@ -47,7 +53,8 @@
   date: 2026/02/08
   image: 533c664d-a1dd-4ec9-931d-a9acdce051fb
   ignore: false
-- title: MySQL 構築速度が24倍に！XtraBackup による劇的パフォーマンス改善 [DeNA インフラ SRE]
+- id: https://engineering.dena.com/blog/2025/12/xtrabackup-construction/
+  title: MySQL 構築速度が24倍に！XtraBackup による劇的パフォーマンス改善 [DeNA インフラ SRE]
   tags:
     - MySQL
     - SRE
@@ -56,7 +63,8 @@
   date: 2025/12/22
   image: e5d1fa2d-2602-479f-8388-d702fbf15686
   ignore: false
-- title: AIエディタEDENが拓く技術ブログ執筆の効率化
+- id: https://engineering.dena.com/blog/2025/12/ai-editor-eden/
+  title: AIエディタEDENが拓く技術ブログ執筆の効率化
   tags:
     - LLM
     - DeNA
@@ -64,7 +72,8 @@
   date: 2025/12/10
   image: 790eb342-e15b-454c-a44b-97edd5a42b29
   ignore: false
-- title: ISUCON14感想戦で40万点超えました
+- id: https://trap.jp/post/2443/
+  title: ISUCON14感想戦で40万点超えました
   tags:
     - ISUCON
     - Go
@@ -72,7 +81,8 @@
   date: 2024/12/18
   image: 7a0e171c-6403-4574-813f-e0f656453301
   ignore: false
-- title: ISUCON14にツールの力で勝ちたかった
+- id: https://trap.jp/post/2434/
+  title: ISUCON14にツールの力で勝ちたかった
   tags:
     - ISUCON
     - Go
@@ -81,7 +91,8 @@
   date: 2024/12/18
   image: cc190421-bfd2-4f1f-a698-914e4ad7e3d7
   ignore: false
-- title: このはちゃん壁紙を自動更新する
+- id: https://trap.jp/post/2400/
+  title: このはちゃん壁紙を自動更新する
   tags:
     - ConoHa
     - Tool
@@ -89,7 +100,8 @@
   date: 2024/12/18
   image: 1e48e879-bb9f-4421-9c81-380ccc7c8902
   ignore: false
-- title: 趣味開発Webアプリケーションのほぼ0円インフラ構成
+- id: https://qiita.com/mazrean/items/f4a48d43b2d680a92216
+  title: 趣味開発Webアプリケーションのほぼ0円インフラ構成
   tags:
     - GCP
     - Cloudflare
@@ -99,7 +111,8 @@
   date: 2024/12/04
   image: f3def618-6ab0-4a58-ab31-1c6417ab6b52
   ignore: false
-- title: 技術的挑戦を通して感じるDeNA [日比谷音楽祭おさんぽアプリ2024 サーバー編]
+- id: https://engineering.dena.com/blog/2024/06/hibiya2024-intern-sv/
+  title: 技術的挑戦を通して感じるDeNA [日比谷音楽祭おさんぽアプリ2024 サーバー編]
   tags:
     - Go
     - GCP
@@ -109,7 +122,8 @@
   date: 2024/06/25
   image: 9d30ecde-e94f-43a2-be59-076ca8e7c592
   ignore: false
-- title: multipart/form-dataの省メモリかつ高速なパーサー「FormStream」
+- id: https://zenn.dev/trap/articles/6c4cc5506d3306
+  title: multipart/form-dataの省メモリかつ高速なパーサー「FormStream」
   tags:
     - Go
     - Library
@@ -117,7 +131,8 @@
   date: 2024/03/18
   image: e7d8cdb2-4b18-4259-9542-5eb599efebb1
   ignore: false
-- title: Go Conference mini 2023 Winter IN KYOTOでLTしました
+- id: https://trap.jp/post/2078/
+  title: Go Conference mini 2023 Winter IN KYOTOでLTしました
   tags:
     - Go
     - Go Conference
@@ -125,7 +140,8 @@
   date: 2023/12/07
   image: a641c6fc-bd4f-40b0-bb20-8304743b2a13
   ignore: false
-- title: ISUCON13にツールの力で勝ちたかった(mazrean)
+- id: https://trap.jp/post/2046/
+  title: ISUCON13にツールの力で勝ちたかった(mazrean)
   tags:
     - ISUCON
     - Go
@@ -134,7 +150,8 @@
   date: 2023/11/26
   image: 3b8c94fb-81ac-4cf6-b9a3-f40e2bbab355
   ignore: false
-- title: traP Collectionでのダウンタイムほぼ0のAPI移行
+- id: https://trap.jp/post/1815/
+  title: traP Collectionでのダウンタイムほぼ0のAPI移行
   tags:
     - Go
     - traP
@@ -142,7 +159,8 @@
   date: 2023/03/29
   image: 8ce56914-8682-455f-9800-3225f52fa365
   ignore: false
-- title: CGOでGoからZigのライブラリを呼び出す
+- id: https://zenn.dev/mazrean/articles/4b7d9ba78fd073
+  title: CGOでGoからZigのライブラリを呼び出す
   tags:
     - Go
     - Zig
@@ -151,13 +169,15 @@
   date: 2022/09/16
   image: b344f684-daeb-464b-95c2-9e684d048d02
   ignore: false
-- title: ISUCON 12本戦 traQ内実況まとめ
+- id: https://trap.jp/post/1665/
+  title: ISUCON 12本戦 traQ内実況まとめ
   tags: []
   ref: https://trap.jp/post/1665/
   date: 2022/08/28
   image: 6f6f53fd-0027-49c2-8d21-6ee3104bae32
   ignore: true
-- title: ISUCON12予選に参加して完敗しました(mazrean)
+- id: https://trap.jp/post/1631/
+  title: ISUCON12予選に参加して完敗しました(mazrean)
   tags:
     - ISUCON
     - Go
@@ -166,7 +186,8 @@
   date: 2022/07/25
   image: 31735cf6-7fd3-4e75-b3d4-17a5a6096ea1
   ignore: false
-- title: CPCTF22 作問者writeup by mazrean
+- id: https://trap.jp/post/1572/
+  title: CPCTF22 作問者writeup by mazrean
   tags:
     - CTF
     - Go
@@ -175,20 +196,23 @@
   date: 2022/05/01
   image: 5f490e6d-f610-4cc8-91f7-32c17338cb84
   ignore: false
-- title: アーキテクチャとディレクトリ構造
+- id: https://trap.jp/post/1546/
+  title: アーキテクチャとディレクトリ構造
   tags:
     - Software Architecture
   ref: https://trap.jp/post/1546/
   date: 2022/04/05
   image: cd6a7955-cbdc-4e78-9709-39f6d821883d
   ignore: false
-- title: traP LT 2022を開催しました
+- id: https://trap.jp/post/1435/
+  title: traP LT 2022を開催しました
   tags: []
   ref: https://trap.jp/post/1435/
   date: 2022/04/03
   image: 9eb2c444-82b9-4b98-b525-987a4a2c865a
   ignore: true
-- title: Genericsを使いミスを防ぐSQL Builder「GenORM」
+- id: https://zenn.dev/mazrean/articles/c795c04e4837b4
+  title: Genericsを使いミスを防ぐSQL Builder「GenORM」
   tags:
     - Go
     - ORM
@@ -197,7 +221,8 @@
   date: 2022/03/16
   image: 6031045b-5ce5-466f-9b46-702011d71a17
   ignore: false
-- title: 学生枠でISUCON11予選を突破しました
+- id: https://trap.jp/post/1357/
+  title: 学生枠でISUCON11予選を突破しました
   tags:
     - ISUCON
     - Go
@@ -205,7 +230,8 @@
   date: 2021/08/27
   image: d4aaf8a7-98cd-42c1-b8cf-ce97f6fbbd29
   ignore: false
-- title: CPCTFを支えたWebshell
+- id: https://trap.jp/post/1343/
+  title: CPCTFを支えたWebshell
   tags:
     - Go
     - Docker
@@ -214,7 +240,8 @@
   date: 2021/08/12
   image: 29bd1310-e614-49e4-90a7-bf3e0f1cff67
   ignore: false
-- title: CPCTFを支えたインフラ
+- id: https://trap.jp/post/1303/
+  title: CPCTFを支えたインフラ
   tags:
     - Ansible
     - monitoring
@@ -223,13 +250,15 @@
   date: 2021/05/16
   image: 83c781c7-f739-4b4f-80b5-ef8eb5143cf5
   ignore: false
-- title: オンライン技術系イベントの勧め
+- id: https://trap.jp/post/1205/
+  title: オンライン技術系イベントの勧め
   tags: []
   ref: https://trap.jp/post/1205/
   date: 2021/04/11
   image: 7f0f19b5-0d90-4014-91d4-dc2fde3e70dc
   ignore: true
-- title: 2020冬ハッカソン 2班 「Qtheme」
+- id: https://trap.jp/post/1192/
+  title: 2020冬ハッカソン 2班 「Qtheme」
   tags:
     - Go
     - Vue.js
@@ -238,7 +267,8 @@
   date: 2021/01/26
   image: 201a5a53-4f48-4e4d-acb3-2b9550fa1762
   ignore: false
-- title: 2020春ハッカソン18班 traPixiv「piQ」
+- id: https://trap.jp/post/1102/
+  title: 2020春ハッカソン18班 traPixiv「piQ」
   tags:
     - Go
     - Vue.js
@@ -247,14 +277,16 @@
   date: 2021/01/12
   image: 7a4a3bc9-41c8-475e-b5de-934b1a80f035
   ignore: false
-- title: セキュリティキャンプ全国大会2020に参加しました
+- id: https://trap.jp/post/1175/
+  title: セキュリティキャンプ全国大会2020に参加しました
   tags:
     - SecCamp
   ref: https://trap.jp/post/1175/
   date: 2020/12/11
   image: 54fd63fd-71f1-4fa8-b567-42533617daaf
   ignore: false
-- title: GORMを使い始めたら…
+- id: https://trap.jp/post/1154/
+  title: GORMを使い始めたら…
   tags:
     - Go
     - ORM
@@ -263,7 +295,8 @@
   date: 2020/11/27
   image: gorm
   ignore: false
-- title: 鯨飼いになろう講習会をやった話
+- id: https://trap.jp/post/1118/
+  title: 鯨飼いになろう講習会をやった話
   tags:
     - Docker
     - Lecture
@@ -271,14 +304,16 @@
   date: 2020/09/17
   image: docker
   ignore: false
-- title: GASの過剰に強強な環境構築
+- id: https://trap.jp/post/1069/
+  title: GASの過剰に強強な環境構築
   tags:
     - Google App Script
   ref: https://trap.jp/post/1069/
   date: 2020/05/02
   image: gas
   ignore: false
-- title: 猫でもわかる（諸説）OAuth 2.0
+- id: https://trap.jp/post/1007/
+  title: 猫でもわかる（諸説）OAuth 2.0
   tags:
     - OAuth
   ref: https://trap.jp/post/1007/

@@ -1,16 +1,19 @@
-- org: |
+- id: dena
+  org: |
     株式会社ディー・エヌ・エー
   period:
     start: 2025/04
   description: |
     インフラエンジニアとして、AWS・GCP上に構築された大規模インフラ基盤の運用を行っています。
-- org: デジタル創作同好会traP
+- id: trap
+  org: デジタル創作同好会traP
   period:
     start: 2019/04
     end: 2025/03
   description: |
     部内サービスの開発・運用を行うSysAd班で、ゲームランチャーtraP Collectionのサーバーの開発・運用などを行っていました。
-- org: 東京科学大学大学院 情報理工学院 情報工学系
+- id: science-tokyo-master
+  org: 東京科学大学大学院 情報理工学院 情報工学系
   type: Student(Master)
   period:
     start: 2023/04
@@ -18,7 +21,8 @@
   description: |
     ソフトウェア工学について研究していました。
     具体的には、Gitリポジトリより抽出した変更のパターンをもとにソースコードの変更忘れを防止する研究を行っていました。
-- org: |
+- id: dena-intern
+  org: |
     株式会社ディー・エヌ・エー
   type: Intern, 4 month
   period:
@@ -26,7 +30,8 @@
     end: 2024/06
   description: |
     内定者インターンとして、日比谷音楽祭向けスマートフォンアプリのバックエンド開発を行いました。
-- org: |
+- id: colorful-palette-intern
+  org: |
     株式会社Colorful Palette
     (株式会社サイバーエージェント)
   type: Intern, 1 month
@@ -34,13 +39,15 @@
     month: 2023/11
   description: |
     サーバーサイドエンジニアとしてゲーム開発にかかわっていました。
-- org: ウォンテッドリー株式会社
+- id: wantedly-intern
+  org: ウォンテッドリー株式会社
   type: Intern, 3 weeks
   period:
     month: 2023/08
   description: |
     DX SquadでKubernetesの操作を簡単に行うための内製ツールkubeのカナリアリリース機能の拡張を行いました。
-- org: 東京工業大学(現東京科学大学) 情報理工学院 情報工学系
+- id: titech-bachelor
+  org: 東京工業大学(現東京科学大学) 情報理工学院 情報工学系
   type: Student(Bachelor)
   period:
     start: 2019/04
@@ -48,19 +55,22 @@
   description: |
     情報工学について学び、学部4年ではソフトウェア工学について研究しました。
     具体的には、Gitリポジトリに蓄積された変更履歴から変更のパターンを抽出する研究を行っていました。
-- org: エヌ・ティ・ティ・コミュニケーションズ株式会社
+- id: ntt-com-intern
+  org: エヌ・ティ・ティ・コミュニケーションズ株式会社
   type: Intern, 2 weeks
   period:
     month: 2023/02
   description: |
     kubernetesのYAMLの生成やCDパイプラインの構築を行うNTTグループ向けDevOps基盤「Qmonus」の開発に携わりました。
-- org: 株式会社MIXI
+- id: mixi-intern
+  org: 株式会社MIXI
   type: Intern, 1 month
   period:
     month: 2021/09
   description: |
     SREグループでAWSを利用してのインフラ構築業務の自動化などを行いました。
-- org: ピクシブ株式会社
+- id: pixiv-intern
+  org: ピクシブ株式会社
   type: Intern, 2 weeks
   period:
     month: 2021/03
