@@ -1,3 +1,19 @@
+- title: 原因不明のメモリ高騰を追う！GCEの「見掛け上のメモリ増加」解明による50%コスト削減 [DeNA インフラ SRE]
+  tags:
+    - GCP
+    - DeNA
+  ref: https://engineering.dena.com/blog/2026/10/gce-e2-memory-rightsizing/
+  date: 2026/10/01
+  image: 171b305c-a6ad-4e66-ac6d-7838e0223c09
+  ignore: false
+- title: Cloudflare 上で Jev で作るほぼ0円運用可能な高品質なページ内検索
+  tags:
+    - LLM
+    - Cloudflare
+  ref: https://zenn.dev/mazrean/articles/bd9b563ace18db
+  date: 2026/09/26
+  image: 13b83d6e-8182-411b-9202-947509a6d850
+  ignore: false
 - title: encoding/json/v2 を最速の JSON エンコーダ/デコーダにする
   tags:
     - Go
