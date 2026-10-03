@@ -12,33 +12,35 @@ on:
       - auto_merge_enabled
 
 env:
-  NODE_VERSION: '20'
+  NODE_VERSION: '24'
 
 jobs:
   packages:
     name: Packages
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.5.3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: npm
-          cache-dependency-path: ./package-lock.json
-      - run: npm ci
+          cache: pnpm
+          cache-dependency-path: ./pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
   build:
     name: Build
     runs-on: ubuntu-latest
     needs: [packages]
     steps:
-      - uses: actions/checkout@v3.5.3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: npm
-          cache-dependency-path: ./package-lock.json
-      - run: npm ci
-      - run: npm run build
+          cache: pnpm
+          cache-dependency-path: ./pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run build
         env:
           NODE_ENV: production
   lint:
@@ -46,24 +48,26 @@ jobs:
     runs-on: ubuntu-latest
     needs: [packages]
     steps:
-      - uses: actions/checkout@v3.5.3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: npm
-          cache-dependency-path: ./package-lock.json
-      - run: npm ci
-      - run: npm run lint -- --max-warnings=0
+          cache: pnpm
+          cache-dependency-path: ./pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run lint --max-warnings=0
   typeCheck:
     name: Type Check
     runs-on: ubuntu-latest
     needs: [packages]
     steps:
-      - uses: actions/checkout@v3.5.3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: npm
-          cache-dependency-path: ./package-lock.json
-      - run: npm ci
-      - run: npm run type-check
+          cache: pnpm
+          cache-dependency-path: ./pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run type-check

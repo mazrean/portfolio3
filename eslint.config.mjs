@@ -1,19 +1,17 @@
+import { defineConfig, globalIgnores } from 'eslint/config'
 import globals from 'globals'
-import prettierEslintPlugin from 'eslint-plugin-prettier'
-import astroEslintParser from 'astro-eslint-parser'
+import tseslint from 'typescript-eslint'
 import astroPlugin from 'eslint-plugin-astro'
-import tsEslintPlugin from '@typescript-eslint/eslint-plugin'
+import prettierRecommended from 'eslint-plugin-prettier/recommended'
 
-export default [
-  {
-    ignores: [
-      '**/*.astro/*',
-      '*.astro/*',
-      'dist/**',
-      '.astro/**',
-      'node_modules/**'
-    ]
-  },
+export default defineConfig([
+  globalIgnores([
+    '**/*.astro/*',
+    '*.astro/*',
+    'dist/**',
+    '.astro/**',
+    'node_modules/**'
+  ]),
   {
     languageOptions: {
       ecmaVersion: 2020,
@@ -23,24 +21,24 @@ export default [
         ...globals.es2020
       }
     },
-    plugins: {
-      prettier: prettierEslintPlugin,
-      astro: astroPlugin,
-      '@typescript-eslint': tsEslintPlugin
-    },
     rules: {
       'no-console': 'warn',
-      'no-debugger': 'warn',
-      ...astroPlugin.configs.recommended.rules,
-      ...tsEslintPlugin.configs.recommended.rules,
-      ...prettierEslintPlugin.configs.recommended.rules
+      'no-debugger': 'warn'
     }
   },
-
+  tseslint.configs.recommended,
+  astroPlugin.configs.recommended,
+  prettierRecommended,
   {
-    files: ['*.astro'],
+    // CLI scripts report progress on stdout/stderr by design.
+    files: ['scripts/**'],
+    rules: {
+      'no-console': 'off'
+    }
+  },
+  {
+    files: ['**/*.astro'],
     languageOptions: {
-      parser: astroEslintParser,
       globals: {
         ...globals.node,
         ...globals.es2020,
@@ -52,4 +50,4 @@ export default [
       'astro/no-unused-define-vars-in-style': 'error'
     }
   }
-]
+])

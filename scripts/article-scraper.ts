@@ -92,7 +92,6 @@ for (const rssData of rssDataList.flat()) {
     }
   }
   if (!image) {
-    // eslint-disable-next-line no-console
     console.warn(`Image not found(${rssData.link})`)
     continue
   }

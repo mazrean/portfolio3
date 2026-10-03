@@ -1,11 +1,10 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "baseUrl": ".",
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@yaml/*": ["src/yaml/*.yaml"],
-      "@lib/*": ["src/lib/*"]
+      "@components/*": ["./src/components/*"],
+      "@yaml/*": ["./src/yaml/*.yaml"],
+      "@lib/*": ["./src/lib/*"]
     },
     "typeRoots": ["./node_modules/@types", "./src/*/types"]
   }

@@ -11,7 +11,7 @@ permissions:
   pull-requests: write
 
 env:
-  NODE_VERSION: '20'
+  NODE_VERSION: '24'
 
 jobs:
   article:
@@ -20,22 +20,23 @@ jobs:
     env:
       BRANCH: cron/update-article
     steps:
-      - uses: actions/checkout@v3.5.3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - run: git checkout -B ${{ env.BRANCH }}
-      - uses: actions/setup-node@v3
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: npm
-          cache-dependency-path: ./package-lock.json
-      - run: npm ci
+          cache: pnpm
+          cache-dependency-path: ./pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
       - name: Update article
         id: update
         run: |
           {
             echo "stdout<<EOF"
-            npm run -s gen:article
+            pnpm run -s gen:article
             echo "EOF"
           } >> $GITHUB_OUTPUT
       - name: Check diff
@@ -44,7 +45,7 @@ jobs:
         continue-on-error: true
       - name: Create PR
         run: |
-          npm run gen:webp
+          pnpm run gen:webp
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .
@@ -61,22 +62,23 @@ jobs:
     env:
       BRANCH: cron/update-presentation
     steps:
-      - uses: actions/checkout@v3.5.3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - run: git checkout -B ${{ env.BRANCH }}
-      - uses: actions/setup-node@v3
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: npm
-          cache-dependency-path: ./package-lock.json
-      - run: npm ci
+          cache: pnpm
+          cache-dependency-path: ./pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
       - name: Update presentation
         id: update
         run: |
           {
             echo "stdout<<EOF"
-            npm run -s gen:presentation
+            pnpm run -s gen:presentation
             echo "EOF"
           } >> $GITHUB_OUTPUT
       - name: Check diff
@@ -85,7 +87,7 @@ jobs:
         continue-on-error: true
       - name: Create PR
         run: |
-          npm run gen:webp
+          pnpm run gen:webp
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .
