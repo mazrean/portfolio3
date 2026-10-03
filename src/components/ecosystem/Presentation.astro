@@ -3,10 +3,12 @@ import Button from '@components/molecule/Button.astro'
 import Grid from '@components/molecule/Grid.astro'
 import PresentationCard from '@components/organism/PresentationCard.astro'
 import Subtitle from '@components/organism/Subtitle.astro'
-import type { Presentation } from '@yaml/presentation'
+import type { CollectionEntry } from 'astro:content'
+
+type PresentationData = CollectionEntry<'presentation'>['data']
 
 interface Props {
-  presentationList: Presentation[]
+  presentationList: PresentationData[]
 }
 
 const count = 6

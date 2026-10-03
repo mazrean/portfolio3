@@ -1,6 +1,8 @@
 ---
 import Subtitle from '@components/organism/Subtitle.astro'
-import career from '@yaml/career'
+import { getCollection } from 'astro:content'
+
+const career = (await getCollection('career')).map(({ data }) => data)
 ---
 
 <div class="container">

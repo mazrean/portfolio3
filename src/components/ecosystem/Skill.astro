@@ -3,7 +3,11 @@ import Grid from '@components/molecule/Grid.astro'
 import TextBox from '@components/molecule/TextBox.astro'
 import SkillCard from '@components/organism/SkillCard.astro'
 import Subtitle from '@components/organism/Subtitle.astro'
-import skill from '@yaml/skill'
+import { getEntry } from 'astro:content'
+
+const entry = await getEntry('skill', 'skill')
+if (!entry) throw new Error('skill.yaml not found')
+const skill = entry.data
 ---
 
 <div class="container">

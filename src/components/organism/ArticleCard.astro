@@ -1,8 +1,10 @@
 ---
-import type { Article } from '@yaml/article'
+import type { CollectionEntry } from 'astro:content'
+
+type ArticleData = CollectionEntry<'article'>['data']
 
 interface Props {
-  article: Article
+  article: ArticleData
 }
 
 const { article, ...rest } = Astro.props

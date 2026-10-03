@@ -1,6 +1,10 @@
 ---
 import Icon from '@components/molecule/Icon.astro'
-import data from '@yaml/about'
+import { getEntry } from 'astro:content'
+
+const entry = await getEntry('about', 'about')
+if (!entry) throw new Error('about.yaml not found')
+const data = entry.data
 ---
 
 <div class="container">

@@ -4,14 +4,10 @@ import Grid from '@components/molecule/Grid.astro'
 import Subtitle from '@components/organism/Subtitle.astro'
 import WorksCard from '@components/organism/WorksCard.astro'
 
+import type { CollectionEntry } from 'astro:content'
+
 interface Props {
-  worksList: {
-    name: string
-    ref?: string
-    description: string
-    tags: string[]
-    image: string
-  }[]
+  worksList: CollectionEntry<'works'>['data'][]
 }
 
 const count = 6

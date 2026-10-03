@@ -1,8 +1,10 @@
 ---
-import type { Presentation } from '@yaml/presentation'
+import type { CollectionEntry } from 'astro:content'
+
+type PresentationData = CollectionEntry<'presentation'>['data']
 
 interface Props {
-  presentation: Presentation
+  presentation: PresentationData
 }
 
 const { presentation, ...rest } = Astro.props

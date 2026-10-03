@@ -1,9 +1,11 @@
-import type { Article } from '@yaml/article'
+import type { CollectionEntry } from 'astro:content'
 import * as cheerio from 'cheerio'
 import fs from 'fs/promises'
 import { parse, stringify } from 'yaml'
 import path from 'path'
 import https from 'https'
+
+type Article = CollectionEntry<'article'>['data'] & { id: string }
 
 const articleYamlPath = './src/yaml/article.yaml'
 const imageDirPath = './original/article'
@@ -105,6 +107,7 @@ for (const rssData of rssDataList.flat()) {
   const date = `${year}/${month}/${day}`
 
   const newArticle = {
+    id: rssData.link,
     title: rssData.title,
     tags: [],
     ref: rssData.link,

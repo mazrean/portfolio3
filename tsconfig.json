@@ -4,9 +4,7 @@
     "paths": {
       "@/*": ["./src/*"],
       "@components/*": ["./src/components/*"],
-      "@yaml/*": ["./src/yaml/*.yaml"],
       "@lib/*": ["./src/lib/*"]
-    },
-    "typeRoots": ["./node_modules/@types", "./src/*/types"]
+    }
   }
 }

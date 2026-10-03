@@ -1,9 +1,11 @@
 import * as cheerio from 'cheerio'
 import fs from 'fs/promises'
 import { parse, stringify } from 'yaml'
-import type { Presentation } from '@yaml/presentation'
+import type { CollectionEntry } from 'astro:content'
 import path from 'path'
 import https from 'https'
+
+type Presentation = CollectionEntry<'presentation'>['data'] & { id: string }
 
 const user = 'mazrean'
 const presentationYamlPath = './src/yaml/presentation.yaml'
@@ -146,6 +148,7 @@ for (const deckLink of deckLinks) {
   }
 
   const newPresentation = {
+    id: deckLink,
     title,
     tags: [],
     ref: deckLink,
