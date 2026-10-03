@@ -1,7 +1,7 @@
 ---
 import Badge from '@components/molecule/Badge.astro'
 import { getBlogBySlug, blogList } from '@lib/contents'
-import Layout from 'src/layouts/Layout.astro'
+import Layout from '@/layouts/Layout.astro'
 
 export function getStaticPaths() {
   return blogList.map(blog => ({

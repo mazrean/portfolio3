@@ -1,6 +1,6 @@
 {
   "name": "Mazrean Portfolio 3",
-  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:20",
+  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:24",
 
   "customizations": {
     "codespaces": {
@@ -26,8 +26,8 @@
   },
   "forwardPorts": [4321],
 
-  "postCreateCommand": "npm install",
-  "postAttachCommand": "npm run dev",
+  "postCreateCommand": "corepack enable pnpm && pnpm install",
+  "postAttachCommand": "pnpm run dev",
   "remoteUser": "node",
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
 }

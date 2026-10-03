@@ -7,14 +7,16 @@ const localCollection = (
   })
 ).export()
 
+type IconSet = Parameters<typeof getIconData>[0]
+
 // Cache for loaded icon sets
-const iconSets = new Map<string, any>()
+const iconSets = new Map<string, IconSet>()
 
 async function loadIconSet(collection: string) {
   if (iconSets.has(collection)) {
     return iconSets.get(collection)
   }
-  
+
   try {
     // Try to load the icon set from @iconify-json/*
     const iconSet = await import(`@iconify-json/${collection}`)
@@ -46,6 +48,6 @@ export const getIconSvg = async (icon: string) => {
       }
     }
   }
-  
+
   throw new Error(`Icon ${icon} not found`)
 }
