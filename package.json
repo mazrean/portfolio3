@@ -45,7 +45,7 @@
     "prettier": "^3.8.4",
     "prettier-plugin-astro": "^0.14.1",
     "tsx": "^4.23.15",
-    "typescript-eslint": "^8.71.0"
+    "typescript-eslint": "^8.71.1"
   },
   "packageManager": "pnpm@10.28.0",
   "pnpm": {
