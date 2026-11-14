@@ -1,3 +1,10 @@
+- id: https://zenn.dev/mazrean/articles/5c968503fd69a3
+  title: ISUCON2026 にツールを捨てて勝ちたかった
+  tags: []
+  ref: https://zenn.dev/mazrean/articles/5c968503fd69a3
+  date: 2026/11/01
+  image: d01fea2d-a0a3-4d65-b07a-50a0cac5aaf4
+  ignore: false
 - id: https://engineering.dena.com/blog/2026/10/gce-e2-memory-rightsizing/
   title: 原因不明のメモリ高騰を追う！GCEの「見掛け上のメモリ増加」解明による50%コスト削減 [DeNA インフラ SRE]
   tags:
